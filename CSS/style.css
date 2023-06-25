@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none; /*this is to get rid of the bullet*/
+}
+
+/* Header/Navbar */
+
+.main-header {
+  position: fixed; /*this is done to keep the navbar items fixed while scrolling up or down*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  height: 100px;
+  padding: 0 30px;
+}
+
+/* LOGO */
+.logo {
+  width: 170px;
+  height: 100%;
+}
+
+.logo img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Desktop Menu  */
+.desktop-main-menu{
+ margin-right : 60px;  /* this property will give some space for the right three line menu  */
+}
+
+.desktop-main-menu ul {
+    display: flex; /*value flex is used so that the li's inside of ul are put inside a row*/
+}
+
+.desktop-main-menu ul li {
+    position: relative; 
+     margin-right: 30px; /* this property is used to add spacing in between the list items  */
+     padding-bottom: 2px; /*Inorder to add lining animation beneath every li */
+}
+
+/*Menu item bottom border*/
+
+.desktop-main-menu ul li a::after {
+    content: '';
+    position: absolute; /*this is getting absolute within the li which is positioned relative */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+     transform: scaleX(0);
+    transition: transform 0.6s cubic-bezier(0.19, 1 , 0.22, 1);
+    /*transform-origin: right center; */    
+
+}
+
+ .desktop-main-menu ul li a:hover::after {
+    transform: scaleX(1);
+ /* transform-origin: left center; */
+    transition-duration: 0.5s;
+} 
+
+/* we are basically targeting all the section tags so that each one of them have the same styling  */
+section {
+position: relative;
+    height: 100vh;
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+    /* object-fit: cover; */
+}
+
+
+.section-inner{
+    position: absolute;
+    bottom: 200px;
+    left: 150px;
+    max-width: 560px;
+}
+
+.section-inner h4 {
+  font-size: 22px;
+  margin-bottom: 5px;
+font-weight: 300;
+animation: fadeInUp 0.5s ease-in-out;
+}
+
+.section-inner h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+font-weight: 700;
+animation: fadeInUp 0.5s ease-in-out 0.2s;
+animation-fill-mode: both;
+}
+
+.section-inner a {
+  animation: fadeInUp 0.5s ease-in-out 0.4s;
+  animation-fill-mode: both;
+}
+
+/* Background images */
+.section-a {
+    background-image: url('/images/section-a.webp');
+}
+
+/* .btn {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  min-width: 130px;
+  padding: 15px 50px;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+ overflow: hidden;  /* we don't want the hover feature come outside of its container 
+ z-index: 2;
+ 
+}
+
+.btn:hover span {
+  color: #000;
+}
+
+.btn .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color:#000;
+  z-index: -1;
+  transform: translateY(100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1 , 0.22, 1);
+}
+
+.btn:hover .hover {
+transform : translateY(0);
+} */
+
+
+.btn {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ text-align: center;
+ min-width: 130px;
+ padding: 15px 50px;
+ margin-top: 10px;
+ border: 2px solid white;
+ text-transform: uppercase;
+ overflow: hidden;
+ font-weight: 600;
+ 
+}
+
+.btn::before {
+    position: absolute;
+    content: "hey";
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    height: 100%;
+    width:100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .4s cubic-bezier(0.23, 1, 0.320, 1);   
+}
+
+.btn:hover::before{
+    transform: scaleY(1);
+transform-origin: bottom;
+
+}
+.btn span {
+      position:relative;
+}
+
+.btn:hover span {
+    color: black;
+} 
+
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+     opacity: 0;
+     transform: translateY(140px);
+  }
+
+  100%{
+opacity: 1;
+transform: translateY(0);
+
+  }
+}
