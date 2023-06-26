@@ -287,3 +287,8 @@ transform: translateY(0);
     opacity: 1;
   }
 }
+
+/* Inner Pages */
+.bg-pslv{
+ background-image: url('../images/falcon-9.webp'); 
+}
