@@ -130,6 +130,13 @@ animation-fill-mode: both;
 .section-a {
     background-image: url('/images/section-a.webp');
 }
+.section-b {
+  background-image: url('/images/20.jpg.webp');
+}
+
+.section-c {
+  background-image: url('/images/43.jpg.webp');
+}
 
 /* .btn {
   position: relative;
@@ -184,6 +191,13 @@ transform : translateY(0);
  
 }
 
+.scroll-arrow{
+  position: absolute;
+  bottom: -170px;
+  left: 608px;
+  animation: fadeBounce 3s infinite ;
+}
+
 .btn::before {
     position: absolute;
     content: "hey";
@@ -222,5 +236,21 @@ transform-origin: bottom;
 opacity: 1;
 transform: translateY(0);
 
+  }
+}
+
+@keyframes fadeBounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100%{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  40% {
+    transform: translateY (-20px);
+    opacity: 1;
   }
 }
