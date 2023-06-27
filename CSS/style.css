@@ -291,4 +291,20 @@ transform: translateY(0);
 /* Inner Pages */
 .bg-pslv{
  background-image: url('../images/falcon-9.webp'); 
+
+}
+
+.section-animate {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+     opacity: 0;
+  }
+
+  100%{
+opacity: 1;
+
+  }
 }
