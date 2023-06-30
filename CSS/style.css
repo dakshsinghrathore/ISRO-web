@@ -128,57 +128,19 @@ animation-fill-mode: both;
 
 /* Background images */
 .section-a {
-    background-image: url('/images/section-a.webp');
+    background-image: url('./images/section-a.webp');
 }
 .section-b {
-  background-image: url('/images/20.webp');
+  background-image: url('./images/20.webp');
 }
 
 .section-c {
-  background-image: url('/images/43.webp');
+  background-image: url('./images/43.webp');
 }
 
 .section-d {
-  background-image: url('/images/3517473.webp');
+  background-image: url('./images/3517473.webp');
 }
-
-/* .btn {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  min-width: 130px;
-  padding: 15px 50px;
-  margin-top: 10px;
-  border: 2px solid #fff;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: bold;
- overflow: hidden;  /* we don't want the hover feature come outside of its container 
- z-index: 2;
- 
-}
-
-.btn:hover span {
-  color: #000;
-}
-
-.btn .hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  color:#000;
-  z-index: -1;
-  transform: translateY(100%);
-  transition: transform 0.6s cubic-bezier(0.19, 1 , 0.22, 1);
-}
-
-.btn:hover .hover {
-transform : translateY(0);
-} */
-
 
 .btn {
  position: relative;
