@@ -131,15 +131,15 @@ animation-fill-mode: both;
     background-image: url('/images/section-a.webp');
 }
 .section-b {
-  background-image: url('/images/20.jpg.webp');
+  background-image: url('/images/20.webp');
 }
 
 .section-c {
-  background-image: url('/images/43.jpg.webp');
+  background-image: url('/images/43.webp');
 }
 
 .section-d {
-  background-image: url('/images/3517473.jpg');
+  background-image: url('/images/3517473.webp');
 }
 
 /* .btn {
