@@ -7,7 +7,7 @@ In this project, I have tried to create my version of the 🧑‍🚀 **ISRO** �
 Go ahead, clone it and checkout it out yourself.
 <br>
 ### Currently the project is in the development stage, but here is a glimpse of the landing page. 👇
-<br>![Screenshot 2023-06-26 at 01-51-17 Indian Space Research Organisation](https://github.com/dakshsinghrathore/ISRO-Web/assets/115932772/52e244be-81c7-429d-a150-d4555735200d)
-<br>
-<br>
+
+![imageisro](https://github.com/dakshsinghrathore/ISRO-Web/assets/115932772/4f38498f-c8e8-4cb8-81e4-525a71668c49)
+
 ***If you find this project fascinating ✨ kindly leave a star⭐, would mean alot to me ☺️!!***
