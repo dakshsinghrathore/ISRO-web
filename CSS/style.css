@@ -128,21 +128,21 @@ animation-fill-mode: both;
 
 /* Background images */
 .section-a {
-    background-image: url('./images/section-a.webp');
+    background-image: url('../images/section-a.webp');
     font-size: 20px;
 }
 .section-b {
-  background-image: url('./images/20.webp');
+  background-image: url('../images/20.webp');
   font-size: 20px;
 }
 
 .section-c {
-  background-image: url('./images/43.webp');
+  background-image: url('../images/43.webp');
   font-size: 20px;
 }
 
 .section-d {
-  background-image: url('./images/3517473.webp');
+  background-image: url('../images/3517473.webp');
   font-size: 20px;
 }
 
