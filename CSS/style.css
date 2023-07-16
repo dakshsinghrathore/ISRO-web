@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 *,
 *::before,
 *::after {
@@ -10,7 +9,7 @@
 body {
   background: #000;
   color: #fff;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'VT323', monospace;
 }
 
 a {
@@ -53,6 +52,7 @@ ul {
 /* Desktop Menu  */
 .desktop-main-menu{
  margin-right : 60px;  /* this property will give some space for the right three line menu  */
+ font-size: 21px;
 }
 
 .desktop-main-menu ul {
@@ -107,14 +107,14 @@ position: relative;
 }
 
 .section-inner h4 {
-  font-size: 22px;
+  font-size: 50px;
   margin-bottom: 5px;
 font-weight: 300;
 animation: fadeInUp 0.5s ease-in-out;
 }
 
 .section-inner h2 {
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 20px;
 font-weight: 700;
 animation: fadeInUp 0.5s ease-in-out 0.2s;
@@ -129,17 +129,21 @@ animation-fill-mode: both;
 /* Background images */
 .section-a {
     background-image: url('./images/section-a.webp');
+    font-size: 20px;
 }
 .section-b {
   background-image: url('./images/20.webp');
+  font-size: 20px;
 }
 
 .section-c {
   background-image: url('./images/43.webp');
+  font-size: 20px;
 }
 
 .section-d {
   background-image: url('./images/3517473.webp');
+  font-size: 20px;
 }
 
 .btn {
@@ -206,7 +210,7 @@ footer ul li {
   margin-right: 30px;
   color: #aaa;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 20px;
   line-height: 2.5;
 }
 
@@ -296,13 +300,13 @@ animation: fadeInUp 0.5s ease-in-out;
 }
 
 .section-inner-center p {
-  font-size: 17px;
+  font-size: 25px;
   animation: fadeInUp 0.5s ease-in-out 0.2s;
   animation-fill-mode: both;
   }
 
   .section-inner-center gslv p  {
-    font-size: 20px;
+    font-size: 25px;
     animation: fadeInUp 0.5s ease-in-out 0.2s;
     animation-fill-mode: both;
     color: black;
