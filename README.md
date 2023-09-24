@@ -25,18 +25,18 @@ Contributions are welcome! If you have any ideas, suggestions, or bug fixes, ple
 > **Warning**: Please do not spam the repository with unnecessary PRs. Make sure to follow the project's [code of conduct](/CODE_OF_CONDUCT.md).
 
 - Go through the [CONTRIBUTING.md](https://github.com/dakshsinghrathore/ISRO-web/blob/main/CONTRIBUTING.md) file, where all the guidelines have been mentioned that will guide you to make your contribution.
-- Do check out the [project issue tracker](https://github.com/dakshsinghrathore/ISRO-web/issues) section.
+- Do check out the [project issue tracker](https://github.com/priyankarpal/ProjectsHut/issues) section.
 
 ## 🤝 Our Contributors
 
-<details>
+<!-- <details>
   <summary>Contributors</summary>
     <div>
       <a href="">
-      <img src="https://contrib.rocks/image?repo=priyankarpal/projectshut"/>
+      <img src=""/>  // Use contri.rocks to display the contributors
       </a>
     </div>
-</details>
+</details> -->
 
 Thank you for your interest in contributing to our project! We appreciate any contributions, whether it's bug fixes, new features, or documentation improvements.
 
