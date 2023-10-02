@@ -1,6 +1,6 @@
 ---
-name: Update documentation
-about: Changes regarding documentation to improvise and make it more accessible
+name: Documentation update
+about: Improve Documentation
 title: ''
 labels: ''
 assignees: ''
