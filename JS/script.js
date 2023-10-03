@@ -2,9 +2,13 @@ const btn = document.getElementById('menu-btn');
 const overlay = document.getElementById('overlay');
 const menu = document.getElementById('mobile-menu');
 const counters = document.querySelectorAll('.counter');
+const menuBtn = document.getElementById('menu');
+const menuContent = document.querySelector('.menu-content');
+
+
 let scrollStarted = false;
 
-btn.addEventListener('click', navToggle);
+// btn.addEventListener('click', navToggle);
 document.addEventListener('scroll', scrollPage);
 
 function navToggle() {
@@ -57,3 +61,12 @@ function countUp() {
 function reset() {
   counters.forEach((counter) => (counter.innerHTML = '0'));
 }
+
+// menu button
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+menuBtn.addEventListener('click', () => {
+  menuContent.classList.toggle('active');
+});
+
