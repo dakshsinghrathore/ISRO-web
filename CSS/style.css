@@ -338,6 +338,9 @@ footer ul li a:hover {
 .bg-lmv3 {
   background-image: url("../images/dragon.webp");
 }
+.bg-commu {
+  background-image: url("../images/commu.jpg");
+}
 
 .section-animate {
   animation: fadeIn 2s ease-in-out;
