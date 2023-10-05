@@ -341,6 +341,9 @@ footer ul li a:hover {
 .bg-commu {
   background-image: url("../images/commu.jpg");
 }
+.bg-foreign {
+  background-image: url("../images/foreignIsro.png");
+}
 
 .section-animate {
   animation: fadeIn 2s ease-in-out;
