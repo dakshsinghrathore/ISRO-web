@@ -1,21 +1,20 @@
-const btn = document.getElementById('menu-btn');
-const overlay = document.getElementById('overlay');
-const menu = document.getElementById('mobile-menu');
-const counters = document.querySelectorAll('.counter');
-const menuBtn = document.getElementById('menu');
-const menuContent = document.querySelector('.menu-content');
-
+const btn = document.getElementById("menu-btn");
+const overlay = document.getElementById("overlay");
+const menu = document.getElementById("mobile-menu");
+const counters = document.querySelectorAll(".counter");
+const menuBtn = document.getElementById("menu");
+const menuContent = document.querySelector(".menu-content");
 
 let scrollStarted = false;
 
 // btn.addEventListener('click', navToggle);
-document.addEventListener('scroll', scrollPage);
+document.addEventListener("scroll", scrollPage);
 
 function navToggle() {
-  btn.classList.toggle('open');
-  overlay.classList.toggle('overlay-show');
-  document.body.classList.toggle('stop-scrolling');
-  menu.classList.toggle('show-menu');
+  btn.classList.toggle("open");
+  overlay.classList.toggle("overlay-show");
+  document.body.classList.toggle("stop-scrolling");
+  menu.classList.toggle("show-menu");
 }
 
 function scrollPage() {
@@ -32,11 +31,11 @@ function scrollPage() {
 
 function countUp() {
   counters.forEach((counter) => {
-    counter.innerText = '0';
+    counter.innerText = "0";
 
     const updateCounter = () => {
       // Get count target
-      const target = +counter.getAttribute('data-target');
+      const target = +counter.getAttribute("data-target");
       // Get current counter value
       const c = +counter.innerText;
 
@@ -59,14 +58,13 @@ function countUp() {
 }
 
 function reset() {
-  counters.forEach((counter) => (counter.innerHTML = '0'));
+  counters.forEach((counter) => (counter.innerHTML = "0"));
 }
 
 // menu button
 function myFunction(x) {
   x.classList.toggle("change");
 }
-menuBtn.addEventListener('click', () => {
-  menuContent.classList.toggle('active');
+menuBtn.addEventListener("click", () => {
+  menuContent.classList.toggle("active");
 });
-
