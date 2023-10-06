@@ -144,6 +144,8 @@ section {
   font-size: 20px;
 }
 
+
+
 .btn {
   position: relative;
   display: inline-block;
@@ -343,6 +345,13 @@ footer ul li a:hover {
 }
 .bg-foreign {
   background-image: url("../images/foreignIsro.png");
+}
+
+.bg-hiring {
+  background-image: url("../images/ISRO_Jobs_176176_730x419.jpg");
+}
+.bg-spacex {
+  background-image: url("../images/spacex.jpg");
 }
 
 .section-animate {
