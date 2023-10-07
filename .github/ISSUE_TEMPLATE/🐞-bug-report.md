@@ -2,9 +2,22 @@
 name: "\U0001F41E Bug report"
 about: File a bug report
 title: ''
-labels: ''
+labels: [Bug,Needs,Triage]
 assignees: ''
-
+body:
+- type: checkboxes
+  attributes:
+    labels: Is there an existing issue for this?
+    description: Please search to see if an issue already exist for the bug you encounter.
+    options:
+    - labels: I have searched the existing issues
+      required: true
+- type: textarea
+  attributes:
+    labels:  Current Behavious
+    description: A concise description of what you are experiencing.
+  validations:
+    required: false
 ---
 
 **Describe the bug**
