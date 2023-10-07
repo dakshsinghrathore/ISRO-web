@@ -2,14 +2,14 @@ name: "\U0001F41E Bug report"
 description: "File a bug report"
 title: '🐞Bug'
 labels: [Bug,Needs,Triage]
-assignees: ''
+
 body:
 - type: checkboxes
   attributes:
     label: Is there an existing issue for this?
     description: Please search to see if an issue already exist for the bug you encounter.
     options:
-    - labels: check
+    - label: check
       required: true
 - type: textarea
   attributes:
