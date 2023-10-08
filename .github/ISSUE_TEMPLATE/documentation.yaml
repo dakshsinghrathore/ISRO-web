@@ -1,5 +1,5 @@
-name: Feature Request
-description:  Suggest a feature request
+name: Documentation Request
+description:  Suggest a fedocumentationature request
 title: "[Documentation]: "
 labels: ["Documentation"]
 projects: ["ISRO-web"]
@@ -8,12 +8,11 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: |
-        Thanks for taking the time to fill out this features report!
+      value: "Thanks for taking the time to fill out this features report!"
   - type: checkboxes
     id: issue-check
     attributes:
-      label: alreadyExistIssue
+      label: Is there any existing issue for this?
       description: Please search to see if an issue already exist for the features you proposed.
       options:
         - label: I have searched the existing issues.
@@ -41,6 +40,14 @@ body:
     attributes:
       label: Code of Conduct
       description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+  - type: checkboxes
+    id: issue-terms
+    attributes:
+      label: I want to work on this issue
+      description: I want to work on this issue
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true

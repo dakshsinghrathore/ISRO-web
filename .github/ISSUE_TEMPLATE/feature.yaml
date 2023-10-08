@@ -8,12 +8,11 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: |
-        Thanks for taking the time to fill out this features report!
+      value: "Thanks for taking the time to fill out this features report!"
   - type: checkboxes
     id: issue-check
     attributes:
-      label: alreadyExistIssue
+      label: Is there an existing issue for this?
       description: Please search to see if an issue already exist for the features you proposed.
       options:
         - label: I have searched the existing issues.
@@ -56,8 +55,8 @@ body:
   - type: checkboxes
     id: issue-terms
     attributes:
-      label: 
+      label: I want to work on this issue
       description: I want to work on this issue
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: I want to work on thos issue
           required: true
