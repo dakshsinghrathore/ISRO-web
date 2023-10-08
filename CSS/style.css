@@ -42,8 +42,8 @@ ul {
   align-items: center;
   text-transform: uppercase;
   height: 100px;
-  padding: 10px 30px;
-  background-color: rgba(0, 0, 78, 0.7);
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(10px);
 }
 
