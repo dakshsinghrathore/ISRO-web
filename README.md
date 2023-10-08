@@ -1,4 +1,4 @@
-<h1 align=left> ISRO-Web 🧑🏽‍🚀 😄</h1>
+<h1 align=left> ISRO-Web 🧑🏽‍🚀 </h1>
 Welcome 👋
 
 <p>
