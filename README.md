@@ -42,7 +42,10 @@ Thank you for your interest in contributing to our project! We appreciate any co
 
 We value the time and effort you put into contributing, and we look forward to reviewing and merging your contributions. Join us on this exciting journey of creativity and collaboration, and let your contributions shine on ISRO-Web!
 
-## Special Announcement
+## 🎉 Special Announcement
+
+We intend to express our gratitude by presenting a modest token of appreciation to the top three contributors of our project.
+
 <div align=center>
   <h2>This Project is the part of</h2>
   <!-- <img alt="hacktoberfest" src="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png#gh-light-mode-only" width=87%> -->
