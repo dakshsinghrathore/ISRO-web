@@ -1,0 +1,62 @@
+name: Feature Request
+description:  Suggest a feature request
+title: "[Features]: "
+labels: ["enhancement"]
+projects: ["ISRO-web"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for taking the time to fill out this features report!"
+  - type: checkboxes
+    id: issue-check
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exist for the features you proposed.
+      options:
+        - label: I have searched the existing issues.
+          required: true 
+  - type: textarea
+    id: newIdea
+    attributes:
+      label: What is your new idea?
+      description: Tell us your new feature idea!
+      placeholder: Tell us what you think!
+      value: "A feature happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: Approach
+    attributes:
+      label: What is your aproach for new features
+      description: Tell us what is you approach to create the new feature!
+      placeholder: Tell us how you approach!
+      value: "A feature happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: Add-Screenshots
+    attributes:
+      label: proof?
+      description: Also share us the specific demo picture for specific feature.
+      placeholder: add sufficient SS to explain your feature.
+      value: "A feature screenshots!"
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+  - type: checkboxes
+    id: issue-terms
+    attributes:
+      label: I want to work on this issue
+      description: I want to work on this issue
+      options:
+        - label: I want to work on thos issue
+          required: true

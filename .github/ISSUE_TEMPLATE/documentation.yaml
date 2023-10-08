@@ -1,0 +1,53 @@
+name: Documentation Request
+description:  Suggest a fedocumentationature request
+title: "[Documentation]: "
+labels: ["documentation"]
+projects: ["ISRO-web"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for taking the time to fill out this features report!"
+  - type: checkboxes
+    id: issue-check
+    attributes:
+      label: Is there any existing issue for this?
+      description: Please search to see if an issue already exist for the features you proposed.
+      options:
+        - label: I have searched the existing issues.
+          required: true
+  - type: textarea
+    id: newIdea
+    attributes:
+      label: What is your new idea?
+      description: Tell us about the problem you saw in the documentation
+      placeholder: Tell us what you see!
+      value: "A new documentaion happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: Approach
+    attributes:
+      label: What is your aproach for new features
+      description: Tell us how you are going to solve the stated problem
+      placeholder: Tell us what your approach!
+      value: "A new documentation approach happened!"
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+  - type: checkboxes
+    id: issue-terms
+    attributes:
+      label: I want to work on this issue
+      description: I want to work on this issue
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
