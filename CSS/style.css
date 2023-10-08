@@ -6,6 +6,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html{
+  scroll-snap-type: y mandatory;
+}
+
 body {
   background: #000;
   color: #fff;
@@ -94,6 +99,8 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   /* object-fit: cover; */
 }
 
@@ -275,6 +282,8 @@ section {
 footer {
   position: relative;
   padding: 55px 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 footer ul {
