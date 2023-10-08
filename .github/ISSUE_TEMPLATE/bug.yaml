@@ -1,15 +1,23 @@
 name: Bug Report
 description: File a bug report
 title: "[Bug]: "
-labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
-assignees:
-  - octocat
+labels: ["bug"]
+projects: ["ISRO-web"]
+assignees: ""
+  
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+  - type: checkboxes
+    id: issue-check
+    attributes:
+      label: alreadyExistIssue
+      description: Please search to see if an issue already exist for the bug you encountered.
+      options:
+        - label: I have searched the existing issues.
+          required: true        
   - type: input
     id: contact
     attributes:
@@ -22,11 +30,20 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
+      description: Tell us details about the bug you encountered!
+      placeholder: Tell a brief description of the bug!
       value: "A bug happened!"
     validations:
       required: true
+  - type: textarea
+    id: Add-Screenshots
+    attributes:
+      label: proof?
+      description: Also share us the specific bug picture.
+      placeholder: add sufficient SS to explain your issue.
+      value: "A bug  screenshots!"
+    validations:
+      required: false
   - type: dropdown
     id: version
     attributes:
@@ -55,10 +72,18 @@ body:
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
   - type: checkboxes
-    id: terms
+    id: code-terms
     attributes:
       label: Code of Conduct
       description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+  - type: checkboxes
+    id: issue-terms
+    attributes:
+      label: 
+      description: I want to work on this issue
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
