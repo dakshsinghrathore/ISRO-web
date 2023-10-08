@@ -1,7 +1,7 @@
 name: Documentation Request
 description:  Suggest a fedocumentationature request
 title: "[Documentation]: "
-labels: ["Documentation"]
+labels: ["documentation"]
 projects: ["ISRO-web"]
 assignees:
   - octocat

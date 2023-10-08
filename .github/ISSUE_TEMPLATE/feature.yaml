@@ -1,7 +1,7 @@
 name: Feature Request
 description:  Suggest a feature request
 title: "[Features]: "
-labels: ["feature"]
+labels: ["enhancement"]
 projects: ["ISRO-web"]
 assignees:
   - octocat
