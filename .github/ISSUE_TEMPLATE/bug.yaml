@@ -84,5 +84,5 @@ body:
       label: I want to work on this issue
       description: I want to work on this issue
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: I want to work on this issue
           required: false
