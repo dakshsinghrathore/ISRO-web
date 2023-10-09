@@ -1,6 +1,6 @@
-name: 📚Documentation Request
+name: 📚 Documentation Request
 description:  Suggest a fedocumentationature request
-title: "[Documentation]: "
+title: "[Docs]: "
 labels: ["documentation"]
 projects: ["ISRO-web"]
 assignees:
@@ -49,5 +49,5 @@ body:
       label: I want to work on this issue
       description: I want to work on this issue
       options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+        - label: I want to work on this issue
+          required: false
