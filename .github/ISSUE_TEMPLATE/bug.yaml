@@ -1,7 +1,7 @@
-name: 🐞Bug Report
+name: 🐞 Bug Report
 description: File a bug report
 title: "[Bug]: "
-labels: ["bug"]
+labels: ["bug", "hacktoberfest"]
 projects: ["ISRO-web"]
 assignees:
   - octocat
@@ -85,4 +85,4 @@ body:
       description: I want to work on this issue
       options:
         - label: I agree to follow this project's Code of Conduct
-          required: true
+          required: false
