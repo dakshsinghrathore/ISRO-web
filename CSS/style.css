@@ -15,7 +15,7 @@ html {
 body {
   background: #000;
   color: #fff;
-  font-family: "VT323", monospace;
+  font:16px/24px Arial,Verdana,sans-serif;
 }
 
 a {
