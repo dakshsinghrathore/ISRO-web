@@ -15,7 +15,8 @@ html {
 body {
   background: #000;
   color: #fff;
-  font:16px/24px Arial,Verdana,sans-serif;
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 a {
