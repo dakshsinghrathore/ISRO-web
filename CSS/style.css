@@ -396,6 +396,12 @@ footer ul li a:hover {
 .bg-spacex {
   background-image: url("../images/spacex.jpg");
 }
+.bg-mission1{
+  background-image: url("../images/mission1.png");
+}
+.bg-mission2{
+  background-image: url("../images/mission2.jpg");
+}
 
 .section-animate {
   animation: fadeIn 2s ease-in-out;
