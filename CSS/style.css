@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&display=swap');
+
 *,
 *::before,
 *::after {
@@ -7,14 +8,15 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-snap-type: y mandatory;
 }
 
 body {
   background: #000;
   color: #fff;
-  font-family: "VT323", monospace;
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-size: 13px;
 }
 
 a {
@@ -23,13 +25,16 @@ a {
 }
 
 ul {
-  list-style: none; /*this is to get rid of the bullet*/
+  list-style: none;
+  /*this is to get rid of the bullet*/
 }
+
 
 /* Header/Navbar */
 
 .main-header {
-  position: fixed; /*this is done to keep the navbar items fixed while scrolling up or down*/
+  position: fixed;
+  /*this is done to keep the navbar items fixed while scrolling up or down*/
   top: 0;
   left: 0;
   width: 100%;
@@ -39,7 +44,9 @@ ul {
   align-items: center;
   text-transform: uppercase;
   height: 100px;
-  padding: 0 30px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
 }
 
 /* LOGO */
@@ -49,32 +56,37 @@ ul {
 }
 
 .logo img {
-  width: 100%;
-  display: block;
-  height: auto;
+  /* width: 100%; */
+  /* display: block; */
+  height: 100%;
 }
 
 /* Desktop Menu  */
 .desktop-main-menu {
-  margin-right: 60px; /* this property will give some space for the right three line menu  */
-  font-size: 21px;
+  margin-right: 60px;
+  /* this property will give some space for the right three line menu  */
+  font-size: 17px;
 }
 
 .desktop-main-menu ul {
-  display: flex; /*value flex is used so that the li's inside of ul are put inside a row*/
+  display: flex;
+  /*value flex is used so that the li's inside of ul are put inside a row*/
 }
 
 .desktop-main-menu ul li {
   position: relative;
-  margin-right: 30px; /* this property is used to add spacing in between the list items  */
-  padding-bottom: 2px; /*Inorder to add lining animation beneath every li */
+  margin-right: 30px;
+  /* this property is used to add spacing in between the list items  */
+  padding-bottom: 2px;
+  /*Inorder to add lining animation beneath every li */
 }
 
 /*Menu item bottom border*/
 
 .desktop-main-menu ul li a::after {
   content: "";
-  position: absolute; /*this is getting absolute within the li which is positioned relative */
+  position: absolute;
+  /*this is getting absolute within the li which is positioned relative */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -112,14 +124,14 @@ section {
 }
 
 .section-inner h4 {
-  font-size: 50px;
+  font-size: 38px;
   margin-bottom: 5px;
   font-weight: 300;
   animation: fadeInUp 0.5s ease-in-out;
 }
 
 .section-inner h2 {
-  font-size: 30px;
+  font-size: 23px;
   margin-bottom: 20px;
   font-weight: 700;
   animation: fadeInUp 0.5s ease-in-out 0.2s;
@@ -133,20 +145,26 @@ section {
 
 /* Background images */
 .section-a {
-  background-image: url("../images/section-a.webp");
+  background-image: url("../images/nisar.jpg");
   font-size: 20px;
 }
+
 .section-b {
-  background-image: url("../images/20.webp");
+  background-image: url(../images/chandrayan1.webp);
   font-size: 20px;
 }
 
 .section-c {
-  background-image: url("../images/43.webp");
+  background-image: url("../images/20.webp");
   font-size: 20px;
 }
 
 .section-d {
+  background-image: url("../images/43.webp");
+  font-size: 20px;
+}
+
+.section-e {
   background-image: url("../images/3517473.webp");
   font-size: 20px;
 }
@@ -191,6 +209,7 @@ section {
   transform: scaleY(1);
   transform-origin: bottom;
 }
+
 .btn span {
   position: relative;
 }
@@ -198,6 +217,7 @@ section {
 .btn:hover span {
   color: black;
 }
+
 /* menu content */
 .menu-content {
   display: none;
@@ -209,6 +229,7 @@ section {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 12;
 }
+
 .menu-content.active {
   display: block;
 }
@@ -229,15 +250,18 @@ section {
   margin: 0;
   list-style-type: none;
 }
+
 .nav-item {
   margin-top: 30px;
 }
+
 .nav-item a {
   display: block;
   font-size: 15pt;
   text-decoration: none;
   padding: 2px 0 2px 8px;
 }
+
 .nav-item a:hover {
   color: #dedddd;
 }
@@ -266,18 +290,23 @@ section {
   margin: 2px 0;
   cursor: pointer;
 }
+
 .change {
   cursor: pointer;
 }
+
 .change #bar1 {
   transform: translate(3px, 6px) rotate(-45deg);
 }
+
 .change #bar2 {
   opacity: 0;
 }
+
 .change #bar3 {
   transform: translate(3px, -2px) rotate(45deg);
 }
+
 /* footer */
 footer {
   position: relative;
@@ -297,7 +326,7 @@ footer ul li {
   margin-right: 30px;
   color: #aaa;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 2.5;
 }
 
@@ -324,6 +353,7 @@ footer ul li a:hover {
 }
 
 @keyframes fadeBounce {
+
   0%,
   20%,
   50%,
@@ -343,15 +373,19 @@ footer ul li a:hover {
 .bg-pslv {
   background-image: url("../images/falcon-9.webp");
 }
+
 .bg-gslv {
   background-image: url("../images/falcon-heavy.webp");
 }
+
 .bg-lmv3 {
   background-image: url("../images/dragon.webp");
 }
+
 .bg-commu {
   background-image: url("../images/commu.jpg");
 }
+
 .bg-foreign {
   background-image: url("../images/foreignIsro.png");
 }
@@ -359,6 +393,7 @@ footer ul li a:hover {
 .bg-hiring {
   background-image: url("../images/ISRO_Jobs_176176_730x419.jpg");
 }
+
 .bg-spacex {
   background-image: url("../images/spacex.jpg");
 }
@@ -394,13 +429,13 @@ footer ul li a:hover {
 }
 
 .section-inner-center h3 {
-  font-size: 80px;
+  font-size: 60px;
   margin-bottom: 15px;
   animation: fadeInUp 0.5s ease-in-out;
 }
 
 .section-inner-center p {
-  font-size: 25px;
+  font-size: 20px;
   animation: fadeInUp 0.5s ease-in-out 0.2s;
   animation-fill-mode: both;
 }
@@ -425,10 +460,15 @@ footer ul li a:hover {
 }
 
 .stats div span {
-  font-size: 160px;
+  font-size: 120px;
 }
 
 .stats div h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
 }
+
+
+
+
+
