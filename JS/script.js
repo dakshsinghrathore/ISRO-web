@@ -83,3 +83,37 @@ function myFunction(x) {
 menuBtn.addEventListener("click", () => {
   menuContent.classList.toggle("active");
 });
+
+  // Function to show the toast notification
+  function showSubscribeToast() {
+    var toast = document.getElementById("subscribe-toast");
+    toast.style.display = "block";
+
+    setTimeout(function () {
+      toast.style.display = "none";
+    }, 5000); // Hide the toast after 5 seconds
+  }
+
+  // Function to handle the "Subscribe" button click
+  function subscribeToNewsletter() {
+    // You can add your newsletter subscription logic here
+    // For demonstration purposes, we'll simply show the toast
+    showSubscribeToast();
+  }
+
+  // Add an event listener to the "Subscribe" button
+  document.getElementById("subscribe-button").addEventListener("click", subscribeToNewsletter);
+
+  // Show the toast notification when the page loads (for demonstration)
+  window.addEventListener("load", showSubscribeToast);
+
+  // Function to handle form submission
+document.getElementById("newsletter-form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent the form from submitting
+  // You can add your form submission logic here
+
+  // For demonstration purposes, show a success message
+  document.getElementById("newsletter-form").innerHTML =
+    '<p>Thank you for subscribing!</p>';
+});
+
