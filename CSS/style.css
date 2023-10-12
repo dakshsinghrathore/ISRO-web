@@ -273,7 +273,7 @@ section {
 }
 
 .nav-item {
-  margin-top: 30px;
+  margin: 15px;
 }
 
 .nav-item a {
@@ -281,6 +281,7 @@ section {
   font-size: 15pt;
   text-decoration: none;
   padding: 2px 0 2px 8px;
+  text-align: center;
 }
 
 .nav-item a:hover {
@@ -510,6 +511,7 @@ footer ul li a:hover {
 }
 
 #subscribe-button {
+  margin-left: 10px;
   background-color: #007BFF;
   color: #fff;
   border: none;
