@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-    <script src="js/script.js"></script>
     <title>MISSION</title>
     <style>
-        html{
-            scroll-snap-type: none;
-        }
+      html {
+        scroll-snap-type: none;
+      }
       .card {
-            display: flex;
-            justify-content: center;
-            
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            margin: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-    .stats1{
+        display: flex;
+        justify-content: center;
+
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+      .stats1 {
         max-width: 960px;
         margin: 0 auto;
         display: flex;
@@ -31,177 +33,243 @@
         justify-content: center;
         text-align: center;
         text-transform: uppercase;
-    }
-    /* Style for the image on the left */
-    .card img {
-      max-width: 500px; /* Adjust the maximum width of the image as needed */
-      height: auto;
-      margin-right: 10px;
-    }
+      }
+      /* Style for the image on the left */
+      .card img {
+        max-width: 500px; /* Adjust the maximum width of the image as needed */
+        height: auto;
+        margin-right: 10px;
+      }
 
-    /* Style for the text on the right */
-    .card .card-text {
-      flex-grow: 1;
-      justify-content: center;
-    }
-    .jobtitle{
+      /* Style for the text on the right */
+      .card .card-text {
+        flex-grow: 1;
+        justify-content: center;
+      }
+      .jobtitle {
         margin-bottom: 2rem;
-    }
-    .job{
+      }
+      .job {
         display: flex;
         justify-content: center;
         margin-bottom: 1rem;
         margin-top: 1rem;
-    }
-   .card .learn-more-button {
+      }
+      .card .learn-more-button {
         /* Align the button to the bottom of the card */
-      padding: 10px 20px;
-      position: absolute;
-      bottom: 0;
-      background-color: #007bff; /* Button background color */
-      color: #fff; /* Button text color */
-      border: none;
-      border-radius: 5px;
-      
-      cursor: pointer;
-      margin-bottom: 1rem;
-        }
-        .button_div{
-            margin-right: 6rem;
-        }
-        .card .learn-more-button:hover{
-            background-color: #659bd5; 
-        }
-        
+        padding: 10px 20px;
+        position: absolute;
+        bottom: 0;
+        background-color: #007bff; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none;
+        border-radius: 5px;
+
+        cursor: pointer;
+        margin-bottom: 1rem;
+      }
+      .button_div {
+        margin-right: 6rem;
+      }
+      .card .learn-more-button:hover {
+        background-color: #659bd5;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="main-header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" alt="ISRO">
-            </a>
-        </div>
-        <nav class="desktop-main-menu">
-            <ul>
-                <li><a href="PSLV.html">Polar Satellite LV</a></li>
-                <li><a href="GSLV.html">Geo Satellite LV</a></li>
-                <li><a href="LVM3.html">Geo Satellite M3</a></li>
-                <li><a href="COMMU.html">Communication Satellites</a></li>
-                <li><a href="Foreign.html">Foreign Satellites</a></li>
-
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="ISRO" />
+        </a>
+      </div>
+      <nav class="desktop-main-menu">
+        <ul>
+          <li><a href="../PSLV">Polar Satellite LV</a></li>
+          <li><a href="../GSLV">Geo Satellite LV</a></li>
+          <li><a href="../LMV3">Geo Satellite M3</a></li>
+          <li>
+            <a href="../Communication-Satelites ">Communication Satellites</a>
+          </li>
+          <li><a href="../Foreign ">Foreign Satellites</a></li>
+        </ul>
+        <div class="menu-content">
+          <div id="menu-navigation">
+            <ul class="nav-link">
+              <li class="nav-item primary">
+                <a href="">Mission</a>
+              </li>
+              <li class="nav-item primary">
+                <a href="/index.html">Launches</a>
+              </li>
+              <li class="nav-item primary">
+                <a href="../Careers">Careers</a>
+              </li>
+              <li class="nav-item primary">
+                <a href="../Updates ">Updates</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+        <button id="menu">
+          <div id="bar" onclick="myFunction(this)">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+        </button>
+      </nav>
     </header>
 
-   <section class="bg-mission1">
-
-   </section>
-   <section class="bg-mission2 mission2">
-
-   </section>
-<div class="section-inner-center">
-    <h3>Isro Future Mission</h3>
-    <p>Here is the list of upcoming ISRO missions !</p>
-</div>
-<div class="job">
-    <h1>Available Jobs</h1>
-</div>
- <!-- job 1 -->
-<div class="stats1">
-    <div class="card">
-        <img src="https://images.hindustantimes.com/tech/img/2023/09/16/original/Gaganyaan_1694842253481.jpg" alt="Image">
+    <section class="bg-mission1"></section>
+    <section class="bg-mission2 mission2"></section>
+    <div class="section-inner-center">
+      <h3>Isro Future Mission</h3>
+      <p>Here is the list of upcoming ISRO missions !</p>
+    </div>
+    <div class="job">
+      <h1>Available Jobs</h1>
+    </div>
+    <!-- job 1 -->
+    <div class="stats1">
+      <div class="card">
+        <img
+          src="https://images.hindustantimes.com/tech/img/2023/09/16/original/Gaganyaan_1694842253481.jpg"
+          alt="Image"
+        />
         <div class="card-text">
           <h2 class="jobtitle">Gaganyaan</h2>
-          <p>Gaganyaan project envisages demonstration of human spaceflight capability by launching crew of 3 members to an orbit of 400 km for a 3 days mission and bring them back safely to earth, by landing in Indian sea waters.</p>
-            
+          <p>
+            Gaganyaan project envisages demonstration of human spaceflight
+            capability by launching crew of 3 members to an orbit of 400 km for
+            a 3 days mission and bring them back safely to earth, by landing in
+            Indian sea waters.
+          </p>
+
           <!-- <a class="learn-more-button" href="#">Read More</a> -->
           <div class="button_div">
-           <a href="https://www.isro.gov.in/Gaganyaan.html" target="_blank"><button class="learn-more-button" >Learn More</button></a> 
+            <a href="https://www.isro.gov.in/Gaganyaan.html" target="_blank"
+              ><button class="learn-more-button">Learn More</button></a
+            >
           </div>
-        
         </div>
-        
       </div>
-</div>
-<!-- 
+    </div>
+    <!-- 
 job2  -->
-<div class="stats1">
-    <div class="card">
-        <img src="https://drishtiias.com/images/uploads/1685166093_image2.png" alt="Image">
+    <div class="stats1">
+      <div class="card">
+        <img
+          src="https://drishtiias.com/images/uploads/1685166093_image2.png"
+          alt="Image"
+        />
         <div class="card-text">
           <h2 class="jobtitle">XPoSat (X-ray Polarimeter Satellite)</h2>
-          <p>XPoSat (X-ray Polarimeter Satellite) is India’s first dedicated polarimetry mission to study various 
-            dynamics of bright astronomical X-ray sources in extreme conditions. The spacecraft will carry two scientific
-            payloads in a low earth orbit. The primary payload POLIX (Polarimeter Instrument in X-rays) will measure the 
-            polarimetry parameters (degree and angle of polarization) in medium X-ray energy range of 8-30 keV photons of 
-            astronomical origin. The XSPECT (X-ray Spectroscopy and Timing) payload will give spectroscopic information in the 
-            energy range of 0.8-15 keV.</p>
-            
+          <p>
+            XPoSat (X-ray Polarimeter Satellite) is India’s first dedicated
+            polarimetry mission to study various dynamics of bright astronomical
+            X-ray sources in extreme conditions. The spacecraft will carry two
+            scientific payloads in a low earth orbit. The primary payload POLIX
+            (Polarimeter Instrument in X-rays) will measure the polarimetry
+            parameters (degree and angle of polarization) in medium X-ray energy
+            range of 8-30 keV photons of astronomical origin. The XSPECT (X-ray
+            Spectroscopy and Timing) payload will give spectroscopic information
+            in the energy range of 0.8-15 keV.
+          </p>
+
           <!-- <a class="learn-more-button" href="#">Read More</a> -->
           <div class="button_div">
-            <a href="https://www.isro.gov.in/XPoSat.html" target="_blank"><button class="learn-more-button" >Learn More</button></a>
+            <a href="https://www.isro.gov.in/XPoSat.html" target="_blank"
+              ><button class="learn-more-button">Learn More</button></a
+            >
           </div>
-        
         </div>
-        
       </div>
-</div>
+    </div>
 
-<!-- job3 -->
+    <!-- job3 -->
 
-<div class="stats1">
-    <div class="card">
-        <img src="https://www.isro.gov.in/media_isro/image/index/NISAR/Picture1.jpg.webp" alt="Image">
+    <div class="stats1">
+      <div class="card">
+        <img
+          src="https://www.isro.gov.in/media_isro/image/index/NISAR/Picture1.jpg.webp"
+          alt="Image"
+        />
         <div class="card-text">
           <h2 class="jobtitle">NASA-ISRO SAR (NISAR) Satellite</h2>
-          <p>NASA-ISRO SAR (NISAR) is a Low Earth Orbit (LEO) observatory being jointly developed by NASA and ISRO</p>
-            
+          <p>
+            NASA-ISRO SAR (NISAR) is a Low Earth Orbit (LEO) observatory being
+            jointly developed by NASA and ISRO
+          </p>
+
           <!-- <a class="learn-more-button" href="#">Read More</a> -->
           <div class="button_div">
-            <a href="https://www.isro.gov.in/NISARSatellite.html" target="_blank"><button class="learn-more-button" >Learn More</button></a>
+            <a
+              href="https://www.isro.gov.in/NISARSatellite.html"
+              target="_blank"
+              ><button class="learn-more-button">Learn More</button></a
+            >
           </div>
-        
         </div>
-        
       </div>
-</div>
+    </div>
 
-<!-- job4 -->
+    <!-- job4 -->
 
-<div class="stats1">
-    <div class="card">
-        <img src="https://staticimg.amarujala.com/assets/images/2019/10/03/750x506/nasa-docking-experiment_1570077050.jpeg" alt="Image">
+    <div class="stats1">
+      <div class="card">
+        <img
+          src="https://staticimg.amarujala.com/assets/images/2019/10/03/750x506/nasa-docking-experiment_1570077050.jpeg"
+          alt="Image"
+        />
         <div class="card-text">
           <h2 class="jobtitle">SPADEX or Space Docking Experiment</h2>
-          <p>SPADEX or Space Docking Experiment is a twin spacecraft mission being developed
-             by the Indian Space Research Organisation (ISRO) to mature technologies related
-              to orbital rendezvous, docking, formation flying</p>
-            
+          <p>
+            SPADEX or Space Docking Experiment is a twin spacecraft mission
+            being developed by the Indian Space Research Organisation (ISRO) to
+            mature technologies related to orbital rendezvous, docking,
+            formation flying
+          </p>
+
           <!-- <a class="learn-more-button" href="#">Read More</a> -->
           <div class="button_div">
-                <a href="https://en.wikipedia.org/wiki/SPADEX" target="_blank"><button class="learn-more-button" >Learn More</button></a>
+            <a href="https://en.wikipedia.org/wiki/SPADEX" target="_blank"
+              ><button class="learn-more-button">Learn More</button></a
+            >
           </div>
-        
         </div>
-        
       </div>
-</div>
+    </div>
 
+    <footer>
+      <ul>
+        <li><b>ISRO &copy; 2023</b></li>
+        <li>
+          <a href="https://twitter.com/isro" target="_blank"
+            ><i class="fa-brands fa-twitter"></i> Twitter</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@isroofficial5866" target="_blank"
+            ><i class="fa-brands fa-youtube"></i> YouTube</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/isro/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="../Privacy/"><i class="fa-solid fa-lock"></i> Privacy</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-truck-field"></i> Suppliers</a>
+        </li>
+      </ul>
+    </footer>
 
-<footer>
-  <ul>
-    <li><b>ISRO &copy; 2023</b></li>
-    <li><a href="https://twitter.com/isro" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-    <li><a href="https://www.youtube.com/@isroofficial5866" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
-    <li><a href="https://www.linkedin.com/company/isro/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-    <li><a href="../Privacy/"><i class="fa-solid fa-lock"></i> Privacy</a></li>
-    <li><a href="#"><i class="fa-solid fa-truck-field"></i> Suppliers</a></li>
-  </ul>
-  </footer>
-
-  <script src="./JS/copyrightYear.js"></script>
-</body>
-
+    <script src="./JS/copyrightYear.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
