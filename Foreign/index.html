@@ -1,84 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="icon" type="icon" href="../images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <title>Communication Satellites</title>
     <style>
-        .custom-link {
-  color: green; /* Define the color for the custom link */
-  text-decoration: none; /* Remove underlines, if desired */
-}
+      .custom-link {
+        color: green; /* Define the color for the custom link */
+        text-decoration: none; /* Remove underlines, if desired */
+      }
 
-.custom-link:hover {
-  color: rgb(102, 102, 200); /* Define a different color when hovered */
-}
+      .custom-link:hover {
+        color: rgb(102, 102, 200); /* Define a different color when hovered */
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="main-header">
-        <div class="logo">
-            <a href="../">
-                <img src="../images/logo.png" alt="ISRO">
-            </a>
+      <div class="logo">
+        <a href="../">
+          <img src="../images/logo.png" alt="ISRO" />
+        </a>
+      </div>
+      <nav class="desktop-main-menu">
+        <ul>
+          <li><a href="../PSLV/">Polar Satellite LV</a></li>
+          <li><a href="../GSLV/">Geo Satellite LV</a></li>
+          <li><a href="../LMV3/">Geo Satellite M3</a></li>
+          <li>
+            <a href="../Communication-Satelites/">Communication Satellites</a>
+          </li>
+          <li id="foreign_satellite"><a href="./">Foreign Satellites</a></li>
+        </ul>
+      </nav>
+      <div class="menu-content">
+        <div id="menu-navigation">
+          <ul class="nav-link">
+            <li class="nav-item primary">
+              <a href="../Mission.html">Mission</a>
+            </li>
+            <li class="nav-item primary">
+              <a href="../index.html">Launches</a>
+            </li>
+            <li class="nav-item primary"><a href="../Careers">Careers</a></li>
+            <li class="nav-item primary"><a href="../Updates">Updates</a></li>
+          </ul>
         </div>
-        <nav class="desktop-main-menu">
-            <ul>
-                <li><a href="../PSLV/">Polar Satellite LV</a></li>
-                <li><a href="../GSLV/">Geo Satellite LV</a></li>
-                <li><a href="../LMV3/">Geo Satellite M3</a></li>
-                <li><a href="../Communication-Satelites/">Communication Satellites</a></li>
-                <li><a href="./">Foreign Satellites</a></li>
-
-            </ul>
-        </nav>
+      </div>
+      <button id="menu">
+        <div id="bar" onclick="myFunction(this)">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+      </button>
     </header>
 
-   <section class="section-animate bg-foreign">
-
-   </section>
-<div class="section-inner-center">
-    <h3>Foreign Satellites</h3>
-    <p>This is a list of all the foreign satellites launched by India. India has launched 431 satellites 
-        for 34 countries as of 30 July 2023.[1] As of 2019, <a href="https://en.wikipedia.org/wiki/ISRO" class="custom-link">the Indian Space Research Organisation</a>, India's government space agency, is the only launch-capable agency in India, and launches all research and commercial projects.</p>
-    <br>
-    <p>To get more knowlege hover to this  <a href="https://en.wikipedia.org/wiki/List_of_foreign_satellites_launched_by_India" class="custom-link">ISRO</a> </p>
-</div>
-<div class="stats">
-    <div>
+    <section class="section-animate bg-foreign"></section>
+    <div class="section-inner-center">
+      <h3>Foreign Satellites</h3>
+      <p>
+        This is a list of all the foreign satellites launched by India. India
+        has launched 431 satellites for 34 countries as of 30 July 2023.[1] As
+        of 2019,
+        <a href="https://en.wikipedia.org/wiki/ISRO" class="custom-link"
+          >the Indian Space Research Organisation</a
+        >, India's government space agency, is the only launch-capable agency in
+        India, and launches all research and commercial projects.
+      </p>
+      <br />
+      <p>
+        To get more knowlege hover to this
+        <a
+          href="https://en.wikipedia.org/wiki/List_of_foreign_satellites_launched_by_India"
+          class="custom-link"
+          >ISRO</a
+        >
+      </p>
+    </div>
+    <div class="stats">
+      <div>
         <span class="counter" data-target="431">431 </span>
         <h4>Total Launches</h4>
-    </div>
+      </div>
 
-    <div>
+      <div>
         <span class="counter" data-target="34">34 </span>
         <h4>Total Countries</h4>
-    </div>
-    <div>
-        <span style="font-size: 160px;">$</span><span class="counter" data-target="101">101 </span><span style="font-size: 160px;">M</span>
-        <h4>Total revenue </h4>
+      </div>
+      <div>
+        <span style="font-size: 160px">$</span
+        ><span class="counter" data-target="101">101 </span
+        ><span style="font-size: 160px">M</span>
+        <h4>Total revenue</h4>
         <h4>Between 2013 and 2015</h4>
+      </div>
     </div>
- 
-</div>
 
-
-<footer>
-    <ul>
-      <li>ISRO &copy; 2023</li>
-      <li><a href="https://twitter.com/isro" target="_blank">Twitter</a></li>
-      <li><a href="https://www.youtube.com/@isroofficial5866" target="_blank">YouTube</a></li>
-      <li><a href="https://www.linkedin.com/company/isro/" target="_blank">LinkedIn</a></li>
-      <li><a href="https://www.instagram.com/isro.dos/" target="_blank">Instagram</a></li>
-      <li><a href="../Privacy/">Privacy</a></li>
-      <li><a href="#">Suppliers</a></li>
-    </ul>
-  </footer>
-  <script src="../JS/script.js"></script>
-
-</body>
-
+    <footer>
+      <ul>
+        <li><b>ISRO &copy; 2023</b></li>
+        <li>
+          <a href="https://twitter.com/isro" target="_blank"
+            ><i class="fa-brands fa-twitter"></i> Twitter</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@isroofficial5866" target="_blank"
+            ><i class="fa-brands fa-youtube"></i> YouTube</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/isro/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="../Privacy/"><i class="fa-solid fa-lock"></i> Privacy</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-truck-field"></i> Suppliers</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="../JS/script.js"></script>
+  </body>
 </html>

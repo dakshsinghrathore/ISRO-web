@@ -79,7 +79,26 @@ ul {
   padding-bottom: 2px;
   /*Inorder to add lining animation beneath every li */
 }
-
+#polarSatellite a{
+  padding-bottom: 1.2px;
+  border-bottom: 1px solid white;
+}
+#gslv a{
+  padding-bottom: 1.2px;
+  border-bottom: 1px solid white;
+}
+#LMV3  a{
+  padding-bottom: 1.2px;
+  border-bottom: 1px solid white;
+}
+#communication_satellite a{
+  padding-bottom: 1.2px;
+  border-bottom: 1px solid white;
+}
+#foreign_satellite a{
+  padding-bottom: 1.2px;
+  border-bottom: 1px solid white;
+}
 /*Menu item bottom border*/
 
 .desktop-main-menu ul li a::after {
@@ -189,7 +208,7 @@ section {
 .scroll-arrow {
   position: absolute;
   bottom: -170px;
-  left: 608px;
+  left: 500px;
   animation: fadeBounce 3s infinite;
 }
 
@@ -254,7 +273,7 @@ section {
 }
 
 .nav-item {
-  margin-top: 30px;
+  margin: 15px;
 }
 
 .nav-item a {
@@ -262,6 +281,7 @@ section {
   font-size: 15pt;
   text-decoration: none;
   padding: 2px 0 2px 8px;
+  text-align: center;
 }
 
 .nav-item a:hover {
@@ -434,6 +454,7 @@ footer ul li a:hover {
   font-size: 80px;
   margin-bottom: 15px;
   animation: fadeInUp 0.5s ease-in-out;
+  /* text-decoration: underline; */
 }
 
 .section-inner-center p {
@@ -490,6 +511,7 @@ footer ul li a:hover {
 }
 
 #subscribe-button {
+  margin-left: 10px;
   background-color: #007BFF;
   color: #fff;
   border: none;

@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="icon" href="../images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <script src="../js/script.js"></script>
-    <title>LVM3</title>
+    <title>Careers</title>
     <style>
       .card {
-            display: flex;
-            justify-content: center;
-            
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            margin: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-    .stats1{
+        display: flex;
+        justify-content: center;
+
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+      .stats1 {
         max-width: 960px;
         margin: 0 auto;
         display: flex;
@@ -29,180 +34,230 @@
         justify-content: center;
         text-align: center;
         text-transform: uppercase;
-    }
-    /* Style for the image on the left */
-    .card img {
-      max-width: 500px; /* Adjust the maximum width of the image as needed */
-      height: auto;
-      margin-right: 10px;
-    }
+      }
+      /* Style for the image on the left */
+      .card img {
+        max-width: 500px; /* Adjust the maximum width of the image as needed */
+        height: auto;
+        margin-right: 10px;
+      }
 
-    /* Style for the text on the right */
-    .card .card-text {
-      flex-grow: 1;
-      justify-content: center;
-    }
-    .jobtitle{
+      /* Style for the text on the right */
+      .card .card-text {
+        flex-grow: 1;
+        justify-content: center;
+      }
+      .jobtitle {
         margin-bottom: 2rem;
-    }
-    .job{
+      }
+      .job {
         display: flex;
         justify-content: center;
         margin-bottom: 1rem;
         margin-top: 1rem;
-    }
-   .card .learn-more-button {
+      }
+      .card .learn-more-button {
         /* Align the button to the bottom of the card */
-      padding: 10px 20px;
-      position: absolute;
-      bottom: 0;
-      background-color: #007bff; /* Button background color */
-      color: #fff; /* Button text color */
-      border: none;
-      border-radius: 5px;
-      
-      cursor: pointer;
-      margin-bottom: 1rem;
-        }
-        .button_div{
-            margin-right: 6rem;
-        }
-        .card .learn-more-button:hover{
-            background-color: #659bd5; 
-        }
-  
+        padding: 10px 20px;
+        position: absolute;
+        bottom: 0;
+        background-color: #007bff; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none;
+        border-radius: 5px;
+
+        cursor: pointer;
+        margin-bottom: 1rem;
+      }
+      .button_div {
+        margin-right: 6rem;
+      }
+      .card .learn-more-button:hover {
+        background-color: #659bd5;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="main-header">
-        <div class="logo">
-            <a href="../">
-                <img src="../images/logo.png" alt="ISRO">
-            </a>
-        </div>
-        <nav class="desktop-main-menu">
-            <ul>
-                <li><a href="../PSLV/">Polar Satellite LV</a></li>
-                <li><a href="../GSLV/">Geo Satellite LV</a></li>
-                <li><a href="../LMV3/">Geo Satellite M3</a></li>
-                <li><a href="../Communication-Satelites/">Communication Satellites</a></li>
-                <li><a href="../Foreign/">Foreign Satellites</a></li>
-
+      <div class="logo">
+        <a href="../">
+          <img src="../images/logo.png" alt="ISRO" />
+        </a>
+      </div>
+      <nav class="desktop-main-menu">
+        <ul>
+          <li><a href="../PSLV">Polar Satellite LV</a></li>
+          <li><a href="../GSLV ">Geo Satellite LV</a></li>
+          <li><a href="../LMV3">Geo Satellite M3</a></li>
+          <li>
+            <a href="../Communication-Satelites">Communication Satellites</a>
+          </li>
+          <li><a href="../Foreign">Foreign Satellites</a></li>
+        </ul>
+        <div class="menu-content">
+          <div id="menu-navigation">
+            <ul class="nav-link">
+              <li class="nav-item primary">
+                <a href="/Mission.html">Mission</a>
+              </li>
+              <li class="nav-item primary">
+                <a href="/index.html">Launches</a>
+              </li>
+              <li class="nav-item primary"><a href="">Careers</a></li>
+              <li class="nav-item primary"><a href="/Updates">Updates</a></li>
             </ul>
-        </nav>
+          </div>
+        </div>
+        <button id="menu">
+          <div id="bar" onclick="myFunction(this)">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+        </button>
+      </nav>
     </header>
 
-   <section class="section-animate bg-hiring">
-
-   </section>
-   <section class="section-animate bg-spacex">
-
-   </section>
-<div class="section-inner-center">
-    <h3>WE ARE HIRING</h3>
-    <p>May You Shine Brightly And Succeed Through Your Extraordinary Skill And Sincere Efforts!</p>
-</div>
-<div class="job">
-    <h1>Available Jobs</h1>
-</div>
- <!-- job 1 -->
-<div class="stats1">
-    <div class="card">
-        <img src="https://images.cnbctv18.com/wp-content/uploads/2021/02/Starlink-851x573.png" alt="Image">
+    <section class="section-animate bg-hiring"></section>
+   <!--- <section class="section-animate bg-spacex"></section> -->
+    <div class="section-inner-center">
+      <h3>WE ARE HIRING</h3>
+      <p>
+        May You Shine Brightly And Succeed Through Your Extraordinary Skill And
+        Sincere Efforts!
+      </p>
+    </div>
+    <div class="job">
+      <h1>Available Jobs</h1>
+    </div>
+    <!-- job 1 -->
+    <div class="stats1">
+      <div class="card">
+        <img
+          src="https://images.cnbctv18.com/wp-content/uploads/2021/02/Starlink-851x573.png"
+          alt="Image"
+        />
         <div class="card-text">
           <h2 class="jobtitle">Quality Control Engineer</h2>
-          <p>We are looking for a candidate who is experienced in Quality Control ISO division for Materials handling at warehouse.
+          <p>
+            We are looking for a candidate who is experienced in Quality Control
+            ISO division for Materials handling at warehouse. With Minimum of
+            1-2 Years of Experience
+          </p>
 
-            With Minimum of 1-2 Years of Experience</p>
-            
           <!-- <a class="learn-more-button" href="#">Read More</a> -->
           <div class="button_div">
-            <button class="learn-more-button" >Learn More</button>
+            <button class="learn-more-button">Learn More</button>
           </div>
-        
         </div>
-        
       </div>
-</div>
-<!-- 
+    </div>
+    <!-- 
 job2  -->
-<div class="stats1">
-    <div class="card">
-        <img src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2023/04/How-ISROs-RLV-Signals-Potential-Competition-for-SpaceX.jpg" alt="Image">
+    <div class="stats1">
+      <div class="card">
+        <img
+          src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2023/04/How-ISROs-RLV-Signals-Potential-Competition-for-SpaceX.jpg"
+          alt="Image"
+        />
         <div class="card-text">
           <h2 class="jobtitle">Assistant Accountant</h2>
-          <p>Key Qualifications & Responsibilities <br>
-            • Processed company documentation, such as invoices and payment checks.
-            • Managed all purchase orders and monitored company budget by controlling project expenses.
-            • Performed administrative tasks, including filing, reporting, tagging fixed assets, etc.
-            • Completed the general ledger with payroll entries.
-            • Maintained flawless communication with the management.
-            • Analyzed QuickBooks data for accuracy</p>
-            
+          <p>
+            Key Qualifications & Responsibilities <br />
+            • Processed company documentation, such as invoices and payment
+            checks. • Managed all purchase orders and monitored company budget
+            by controlling project expenses. • Performed administrative tasks,
+            including filing, reporting, tagging fixed assets, etc. • Completed
+            the general ledger with payroll entries. • Maintained flawless
+            communication with the management. • Analyzed QuickBooks data for
+            accuracy
+          </p>
+
           <!-- <a class="learn-more-button" href="#">Read More</a> -->
           <div class="button_div">
-            <button class="learn-more-button" >Learn More</button>
+            <button class="learn-more-button">Learn More</button>
           </div>
-        
         </div>
-        
       </div>
-</div>
+    </div>
 
-<!-- job3 -->
+    <!-- job3 -->
 
-<div class="stats1">
-    <div class="card">
-        <img src="https://st.adda247.com/https://adda247jobs-wp-assets-adda247.s3.ap-south-1.amazonaws.com/jobs/wp-content/uploads/sites/12/2022/11/24175633/ISRO-Recruitment-1.png" alt="Image">
+    <div class="stats1">
+      <div class="card">
+        <img
+          src="https://st.adda247.com/https://adda247jobs-wp-assets-adda247.s3.ap-south-1.amazonaws.com/jobs/wp-content/uploads/sites/12/2022/11/24175633/ISRO-Recruitment-1.png"
+          alt="Image"
+        />
         <div class="card-text">
           <h2 class="jobtitle">Teacher and Junior Translation Officer</h2>
-          <p>Key Qualifications & Responsibilities <br>
-            Recruitment to the post of Post Graduate Teacher,Trained Graduate</p>
-            
+          <p>
+            Key Qualifications & Responsibilities <br />
+            Recruitment to the post of Post Graduate Teacher,Trained Graduate
+          </p>
+
           <!-- <a class="learn-more-button" href="#">Read More</a> -->
           <div class="button_div">
-            <button class="learn-more-button" >Learn More</button>
+            <button class="learn-more-button">Learn More</button>
           </div>
-        
         </div>
-        
       </div>
-</div>
+    </div>
 
-<!-- job4 -->
+    <!-- job4 -->
 
-<div class="stats1">
-    <div class="card">
-        <img src="https://www.freshersvoice.com/wp-content/uploads/2022/11/ISRO-Recruitment.png" alt="Image">
+    <div class="stats1">
+      <div class="card">
+        <img
+          src="https://www.freshersvoice.com/wp-content/uploads/2022/11/ISRO-Recruitment.png"
+          alt="Image"
+        />
         <div class="card-text">
-          <h2 class="jobtitle">Assistants/Upper Division Clerk and Junior Personal Assistant/Stenographer</h2>
-          <p>Key Qualifications & Responsibilities <br>
-            Recruitment to the post of Post Graduate Teacher,Trained Graduate</p>
-            
+          <h2 class="jobtitle">
+            Assistants/Upper Division Clerk and Junior Personal
+            Assistant/Stenographer
+          </h2>
+          <p>
+            Key Qualifications & Responsibilities <br />
+            Recruitment to the post of Post Graduate Teacher,Trained Graduate
+          </p>
+
           <!-- <a class="learn-more-button" href="#">Read More</a> -->
           <div class="button_div">
-            <button class="learn-more-button" >Learn More</button>
+            <button class="learn-more-button">Learn More</button>
           </div>
-        
         </div>
-        
       </div>
-</div>
+    </div>
 
+    <footer>
+      <ul>
+        <li><b>ISRO &copy; 2023</b></li>
+        <li>
+          <a href="https://twitter.com/isro" target="_blank"
+            ><i class="fa-brands fa-twitter"></i> Twitter</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@isroofficial5866" target="_blank"
+            ><i class="fa-brands fa-youtube"></i> YouTube</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/isro/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="../Privacy/"><i class="fa-solid fa-lock"></i> Privacy</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-truck-field"></i> Suppliers</a>
+        </li>
+      </ul>
+    </footer>
 
-<footer>
-  <ul>
-    <li><b>ISRO &copy; 2023</b></li>
-    <li><a href="https://twitter.com/isro" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-    <li><a href="https://www.youtube.com/@isroofficial5866" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
-    <li><a href="https://www.linkedin.com/company/isro/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-    <li><a href="../Privacy/"><i class="fa-solid fa-lock"></i> Privacy</a></li>
-    <li><a href="#"><i class="fa-solid fa-truck-field"></i> Suppliers</a></li>
-  </ul>
-  </footer>
-
-
-</body>
-
+    <script src="../js/script.js"></script>
+  </body>
 </html>
