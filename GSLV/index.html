@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="icon" type="icon" href="../images/favicon.png" />
     <title>GSLV</title>
 </head>
 
@@ -20,13 +20,34 @@
         <nav class="desktop-main-menu">
             <ul>
                 <li><a href="../PSLV/">Polar Satellite LV</a></li>
-                <li><a href="./">Geo Satellite LV</a></li>
+                <li id="gslv"><a href="./">Geo Satellite LV</a></li>
                 <li><a href="../LMV3/">Geo Satellite M3</a></li>
                 <li><a href="../Communication-Satelites/">Communication Satellites</a></li>
                 <li><a href="../Foreign/">Foreign Satellites</a></li>
 
             </ul>
         </nav>
+        <div class="menu-content">
+            <div id="menu-navigation">
+              <ul class="nav-link">
+                <li class="nav-item primary">
+                  <a href="../Mission.html">Mission</a>
+                </li>
+                <li class="nav-item primary">
+                  <a href="../index.html">Launches</a>
+                </li>
+                <li class="nav-item primary"><a href="../Careers">Careers</a></li>
+                <li class="nav-item primary"><a href="../Updates">Updates</a></li>
+              </ul>
+            </div>
+          </div>
+          <button id="menu">
+            <div id="bar" onclick="myFunction(this)">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+          </button>
     </header>
 
    <section class="section-animate bg-gslv">

@@ -1,70 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="icon" href="../images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <title>PSLV</title>
-</head>
+  </head>
 
-<body> 
+  <body>
     <header class="main-header">
-        <div class="logo">
-            <a href="../">
-                <img src="../images/logo.png" alt="ISRO">
-            </a>
-        </div>
-        <nav class="desktop-main-menu">
-            <ul>
-                <li><a href="./">Polar Satellite LV</a></li>
-                <li><a href="../GSLV/">Geo Satellite LV</a></li>
-                <li><a href="../LMV3/">Geo Satellite M3</a></li>
-                <li><a href="../Communication-Satelites/">Communication Satellites</a></li>
-                <li><a href="../Foreign/">Foreign Satellites</a></li>
-
+      <div class="logo">
+        <a href="../">
+          <img src="../images/logo.png" alt="ISRO" />
+        </a>
+      </div>
+      <nav class="desktop-main-menu">
+        <ul>
+          <li id="polarSatellite"><a href="./">Polar Satellite LV</a></li>
+          <li><a href="../GSLV/">Geo Satellite LV</a></li>
+          <li><a href="../LMV3/">Geo Satellite M3</a></li>
+          <li>
+            <a href="../Communication-Satelites/">Communication Satellites</a>
+          </li>
+          <li><a href="../Foreign/">Foreign Satellites</a></li>
+        </ul>
+        <div class="menu-content">
+          <div id="menu-navigation">
+            <ul class="nav-link">
+              <li class="nav-item primary">
+                <a href="../Mission.html">Mission</a>
+              </li>
+              <li class="nav-item primary">
+                <a href="../index.html">Launches</a>
+              </li>
+              <li class="nav-item primary"><a href="../Careers">Careers</a></li>
+              <li class="nav-item primary"><a href="../Updates">Updates</a></li>
             </ul>
-        </nav>
+          </div>
+        </div>
+        <button id="menu">
+          <div id="bar" onclick="myFunction(this)">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+        </button>
+      </nav>
     </header>
 
-   <section class="section-animate bg-pslv">
-
-   </section>
-<div class="section-inner-center">
-    <h3><a href="https://www.isro.gov.in/mission_PSLV_C54.html"> PSLV-C54/EOS-06 </a></h3>
-    <p>EOS-6 is the third-generation satellite in the Oceansat seriesadd.</p>
-</div>
-<div class="stats">
-    <div>
+    <section class="section-animate bg-pslv"></section>
+    <div class="section-inner-center">
+      <h3>
+        <a href="https://www.isro.gov.in/mission_PSLV_C54.html"
+          >PSLV-C54/EOS-06</a
+        >
+      </h3>
+      <p>
+        EOS-06 is third generation satellite in the Oceansat series, which
+        provides continued services of Oceansat-2 with enhanced payload
+        capability. The satellite onboard carries four important payloads viz.
+        Ocean Color Monitor (OCM-3), Sea Surface Temperature Monitor (SSTM),
+        Ku-Band Scatterometer (SCAT-3), ARGOS. The Oceansat-2 which was a
+        launched during Sept-2009 configured to cover global oceans and provide
+        continuity of ocean colour data with global wind vector and
+        characterization of lower atmosphere and ionosphere.
+      </p>
+    </div>
+    <div class="stats">
+      <div>
         <span class="counter" data-target="13">13</span>
         <h4>Total PSLV Launches</h4>
-    </div>
-    <div>
+      </div>
+      <div>
         <span class="counter" data-target="59"> 59</span>
         <h4>Total Landings</h4>
-    </div>
-    <div>
+      </div>
+      <div>
         <span class="counter" data-target="0">0</span>
         <h4>Total Reflights</h4>
+      </div>
     </div>
-</div>
 
-
-<footer>
-    <ul>
+    <footer>
+      <ul>
         <li><b>ISRO &copy; 2023</b></li>
-        <li><a href="https://twitter.com/isro" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-        <li><a href="https://www.youtube.com/@isroofficial5866" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
-        <li><a href="https://www.linkedin.com/company/isro/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-        <li><a href="../Privacy/"><i class="fa-solid fa-lock"></i> Privacy</a></li>
-        <li><a href="#"><i class="fa-solid fa-truck-field"></i> Suppliers</a></li>
+        <li>
+          <a href="https://twitter.com/isro" target="_blank"
+            ><i class="fa-brands fa-twitter"></i> Twitter</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@isroofficial5866" target="_blank"
+            ><i class="fa-brands fa-youtube"></i> YouTube</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/isro/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="../Privacy/"><i class="fa-solid fa-lock"></i> Privacy</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-truck-field"></i> Suppliers</a>
+        </li>
       </ul>
-  </footer>
+    </footer>
 
-  <script src="../js/script.js"></script>
-
-</body>
-
+    <script src="../js/script.js"></script>
+  </body>
 </html>
