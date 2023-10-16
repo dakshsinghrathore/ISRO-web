@@ -332,13 +332,20 @@ section {
 /* footer */
 footer {
   position: relative;
-  padding: 55px 0;
+  padding: 55px 20px;
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
 
 footer ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer ul {
+  display: block;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -359,6 +366,24 @@ footer ul li a {
 
 footer ul li a:hover {
   color: #aaa;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.footer .logo{
+   width: 340px;
+  height: 160px;
+}
+hr{
+  width: 90%;
+  border-radius: 10%;
+  margin: 20px auto;
+}
+footer .copywrite{
+  text-align: center;
 }
 
 /* Animations */
