@@ -208,7 +208,8 @@ section {
 .scroll-arrow {
   position: absolute;
   bottom: -170px;
-  left: 500px;
+  /* left: 500px; */
+  right: 0;
   animation: fadeBounce 3s infinite;
 }
 
@@ -275,6 +276,9 @@ section {
 .nav-item {
   margin: 15px;
 }
+.satellite-option{
+  margin: 2px;
+}
 
 .nav-item a {
   display: block;
@@ -283,11 +287,32 @@ section {
   padding: 2px 0 2px 8px;
   text-align: center;
 }
+.nav-link ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+}
+
 
 .nav-item a:hover {
   color: #dedddd;
 }
+#secondary{
+  display: none;
+}
+.satellite-option{
+  display: none;
+ 
+}
+.desktop-main-menu ul ul li {
+  margin-right: 0;
+}
+.satellite-option a{
+  width: 100%;
+  font-size:14px;
+  text-align: left;
 
+}
 /* menu button*/
 #menu {
   position: absolute;
@@ -302,6 +327,9 @@ section {
   border: 0;
   background: 0 0;
   transition: opacity 0.5s ease-in;
+}
+.nav-link .secondary{
+  text-align: left;
 }
 
 .bar {
@@ -658,4 +686,24 @@ footer .copywrite{
 .form-control input:valid+label span {
   color: lightblue;
   transform: translateY(-30px);
+}
+#secondary a{
+  display: flex;
+}
+.display-satellites{
+  display: block;
+}
+.rotate-Arrow{
+  transform: rotate(180deg);
+}
+/* .nav-link ul {
+  list-style-type:circle !important;
+} */
+@media screen and (max-width:750px){
+  #secondary{
+    display: block;
+  }
+  .desktop-main-menu .nav-items{
+    display: none;
+  }
 }
