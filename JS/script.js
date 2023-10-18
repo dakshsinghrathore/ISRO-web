@@ -117,3 +117,14 @@ document.getElementById("newsletter-form").addEventListener("submit", function (
     '<p>Thank you for subscribing!</p>';
 });
 
+// Added Event Listener on satellite option for screen size smaller than 750px
+let satelliteOption=document.querySelector("#secondary");
+satelliteOption.addEventListener(("click"),()=>{
+  document.querySelector(".material-symbols-outlined").classList.toggle("rotate-Arrow")
+  let satellites=document.querySelectorAll(".satellite-option");
+  satellites.forEach((ele)=>{
+    ele.classList.toggle("display-satellites");
+  })
+})
+
+
