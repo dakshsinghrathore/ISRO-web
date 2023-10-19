@@ -29,14 +29,15 @@ Contributions are welcome! If you have any ideas, suggestions, or bug fixes, ple
 
 ## 🤝 Our Contributors
 
-<!-- <details>
+<details>
   <summary>Contributors</summary>
     <div>
-      <a href="">
-      <img src=""/>  // Use contri.rocks to display the contributors
+      <a href="https://github.com/dakshsinghrathore/ISRO-web/graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=dakshsinghrathore/ISRO-web" />
       </a>
+    Made with [contrib.rocks](https://contrib.rocks).
     </div>
-</details> -->
+</details>
 
 Thank you for your interest in contributing to our project! We appreciate any contributions, whether it's bug fixes, new features, or documentation improvements.
 
