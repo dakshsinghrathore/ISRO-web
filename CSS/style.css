@@ -319,14 +319,17 @@ section {
   cursor: pointer;
   top: 50%;
   right: 50px;
-  width: 16px;
-  height: 16px;
+  width: 38px;
+  height: 20px;
   transform: translateY(-60%);
   z-index: 55;
   padding: 0 8px;
   border: 0;
   background: 0 0;
   transition: opacity 0.5s ease-in;
+}
+#bar{
+  width: 100%;
 }
 .nav-link .secondary{
   text-align: left;
