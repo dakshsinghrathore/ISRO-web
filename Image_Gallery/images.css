@@ -37,6 +37,11 @@ h1{
     /* margin-right: 0.8rem; */
 }
 
+.filter_buttons button{
+    background-color: rgb(25, 24, 24);
+    color: rgba(250, 235, 215, 0.473);
+}
+
 button{
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
@@ -48,7 +53,7 @@ button{
 }
 
 button.active{
-    background-color: #4070f4;
+    background-color: #3b3b3b;
     color: #fff;
 }
 
