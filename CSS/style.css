@@ -476,10 +476,10 @@ footer .copywrite{
   background-image: url("../images/spacex.jpg");
 }
 .bg-mission1{
-  background-image: url("../images/mission1.png");
+  background-image: url("../images/mission1-transformed.png");
 }
 .bg-mission2{
-  background-image: url("../images/mission2.jpg");
+  background-image: url("../images/mission2-transformed.jpg");
 }
 
 .section-animate {
@@ -601,7 +601,7 @@ footer .copywrite{
 
 /* Form Section */
 .section-f {
-  background-image: url(../images/pragyan.webp);
+  background-image: url(../images/pragyan-transformed.webp);
   background-color: #3c3c3c;
   padding: 30px 0;
   text-align: center;
