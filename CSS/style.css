@@ -711,3 +711,7 @@ footer .copywrite{
     display: none;
   }
 }
+
+#first-hover-button{
+  background-color: #000000ab;
+}
