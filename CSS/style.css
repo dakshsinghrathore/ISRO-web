@@ -710,3 +710,18 @@ footer .copywrite{
     display: none;
   }
 }
+#back-to-top {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  font-size: 2.5rem;
+  background-color: #ff8504; 
+  color: #fff; 
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  display: none; 
+}
