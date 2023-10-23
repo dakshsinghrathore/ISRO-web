@@ -273,10 +273,11 @@ section {
   background-color: rgba(0, 0, 0, 0.600);
   transition: 0.5s;
 }
-
-.nav-item {
+/* chnage-virendrakumar */
+/* .nav-item {
   margin: 15px;
-}
+} */
+
 .satellite-option{
   margin: 2px;
 }
@@ -286,7 +287,9 @@ section {
   font-size: 15pt;
   text-decoration: none;
   padding: 2px 0 2px 8px;
-  text-align: center;
+  /* change by virendra kumar --center to start */
+  text-align: start;
+  line-height: 2.5;
 }
 .nav-link ul{
   display: flex;
@@ -378,6 +381,7 @@ footer ul {
 
 .footer ul {
   display: block;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -406,7 +410,7 @@ footer ul li a:hover {
   
 }
 .footer .logo{
-   width: 340px;
+  width: 340px;
   height: 160px;
 }
 hr{
