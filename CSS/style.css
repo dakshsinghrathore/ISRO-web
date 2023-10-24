@@ -729,7 +729,8 @@ footer .copywrite{
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
-  display: none; 
+  display: none;
+  z-index: 100;
 }
 #first-hover-button{
   background-color: #000000ab;
