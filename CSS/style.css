@@ -28,7 +28,6 @@ ul {
   /*this is to get rid of the bullet*/
 }
 
-
 /* Header/Navbar */
 
 .main-header {
@@ -79,23 +78,23 @@ ul {
   padding-bottom: 2px;
   /*Inorder to add lining animation beneath every li */
 }
-#polarSatellite a{
+#polarSatellite a {
   padding-bottom: 1.2px;
   border-bottom: 1px solid white;
 }
-#gslv a{
+#gslv a {
   padding-bottom: 1.2px;
   border-bottom: 1px solid white;
 }
-#LMV3  a{
+#LMV3 a {
   padding-bottom: 1.2px;
   border-bottom: 1px solid white;
 }
-#communication_satellite a{
+#communication_satellite a {
   padding-bottom: 1.2px;
   border-bottom: 1px solid white;
 }
-#foreign_satellite a{
+#foreign_satellite a {
   padding-bottom: 1.2px;
   border-bottom: 1px solid white;
 }
@@ -187,8 +186,6 @@ section {
   font-size: 20px;
 }
 
-
-
 .btn {
   position: relative;
   display: inline-block;
@@ -270,7 +267,7 @@ section {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  background-color: rgba(0, 0, 0, 0.600);
+  background-color: rgba(0, 0, 0, 0.6);
   transition: 0.5s;
 }
 /* chnage-virendrakumar */
@@ -278,7 +275,7 @@ section {
   margin: 15px;
 } */
 
-.satellite-option{
+.satellite-option {
   margin: 2px;
 }
 
@@ -291,31 +288,28 @@ section {
   text-align: start;
   line-height: 2.5;
 }
-.nav-link ul{
+.nav-link ul {
   display: flex;
   flex-direction: column;
   list-style-type: disc;
 }
 
-
 .nav-item a:hover {
   color: #dedddd;
 }
-#secondary{
+#secondary {
   display: none;
 }
-.satellite-option{
+.satellite-option {
   display: none;
- 
 }
 .desktop-main-menu ul ul li {
   margin-right: 0;
 }
-.satellite-option a{
+.satellite-option a {
   width: 100%;
-  font-size:14px;
+  font-size: 14px;
   text-align: left;
-
 }
 /* menu button*/
 #menu {
@@ -332,10 +326,10 @@ section {
   background: 0 0;
   transition: opacity 0.5s ease-in;
 }
-#bar{
+#bar {
   width: 100%;
 }
-.nav-link .secondary{
+.nav-link .secondary {
   text-align: left;
 }
 
@@ -403,22 +397,21 @@ footer ul li a {
 footer ul li a:hover {
   color: #aaa;
 }
-.footer{
+.footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  
 }
-.footer .logo{
+.footer .logo {
   width: 340px;
   height: 160px;
 }
-hr{
+hr {
   width: 90%;
   border-radius: 10%;
   margin: 20px auto;
 }
-footer .copywrite{
+footer .copywrite {
   text-align: center;
 }
 
@@ -436,7 +429,6 @@ footer .copywrite{
 }
 
 @keyframes fadeBounce {
-
   0%,
   20%,
   50%,
@@ -474,16 +466,16 @@ footer .copywrite{
 }
 
 .bg-hiring {
-  background-image: url("../images/ISRO_Jobs_176176_730x419.jpg");
+  background-image: url("../images/jobs.jpg");
 }
 
 .bg-spacex {
   background-image: url("../images/spacex.jpg");
 }
-.bg-mission1{
+.bg-mission1 {
   background-image: url("../images/mission1-transformed.png");
 }
-.bg-mission2{
+.bg-mission2 {
   background-image: url("../images/mission2-transformed.jpg");
 }
 
@@ -565,7 +557,7 @@ footer .copywrite{
 }
 
 .toast-content {
-  margin-left:10px;
+  margin-left: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -573,7 +565,7 @@ footer .copywrite{
 
 #subscribe-button {
   margin-left: 10px;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -690,32 +682,32 @@ footer .copywrite{
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.form-control input:focus+label span,
-.form-control input:valid+label span {
+.form-control input:focus + label span,
+.form-control input:valid + label span {
   color: lightblue;
   transform: translateY(-30px);
 }
-#secondary a{
+#secondary a {
   display: flex;
 }
-.display-satellites{
+.display-satellites {
   display: block;
 }
-.rotate-Arrow{
+.rotate-Arrow {
   transform: rotate(180deg);
 }
 /* .nav-link ul {
   list-style-type:circle !important;
 } */
-@media screen and (max-width:750px){
-  #secondary{
+@media screen and (max-width: 750px) {
+  #secondary {
     display: block;
   }
-  .desktop-main-menu .nav-items{
+  .desktop-main-menu .nav-items {
     display: none;
   }
 }
 
-#first-hover-button{
+#first-hover-button {
   background-color: #000000ab;
 }
