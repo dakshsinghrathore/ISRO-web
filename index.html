@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Indian Space Research Organisation</title>
 </head>
+
 <body>
+  <button id="back-to-top" >&#8593;</button>
   <header class="main-header">
     <div class="logo">
       <a href="./">
@@ -73,12 +76,12 @@
     <div class="section-inner">
       <h4>Upcoming Launch</h4>
       <h2>NISAR</h2>
-      <a href="https://nisar.jpl.nasa.gov/" target="_blank" class="btn animate"  id="first-hover-button">
+      <a href="https://nisar.jpl.nasa.gov/" target="_blank" class="btn animate" id="first-hover-button">
         <div class="hover">
           <span>Know More</span>
         </div>
       </a>
-     
+
     </div>
     <div class="scroll-arrow">
       <svg width="30px" height="20px">
@@ -202,15 +205,17 @@
         </div>
         <p>Indian Space Research Organisation</p>
       </div>
+
       <div class="link-column">
         <ul>
-          <li><a href="./PSLV/">Polar Satellite LV</a></li>
-          <li><a href="./GSLV/">Geo Satellite LV</a></li>
-          <li><a href="./LMV3/">Geo Satellite M3</a></li>
-          <li>
+          <!-- li-list added a class by virendrakumar-->
+          <li class="nav-item "><a href="./PSLV/">Polar Satellite LV</a></li>
+          <li class="nav-item " ><a href="./GSLV/">Geo Satellite LV</a></li>
+          <li class="nav-item "><a href="./LMV3/">Geo Satellite M3</a></li>
+          <li class="nav-item ">
             <a href="./Communication-Satelites/">Communication Satellites</a>
           </li>
-          <li><a href="./Foreign/">Foreign Satellites</a></li>
+          <li class="nav-item "><a href="./Foreign/">Foreign Satellites</a></li>
         </ul>
       </div>
       <div class="link-column">
@@ -263,7 +268,29 @@
     </ul>
     <p class="copywrite"><b>ISRO &copy; 2023</b></p>
   </footer>
+  <script>
 
+    var backToTopButton = document.getElementById('back-to-top');
+    backToTopButton.addEventListener('click', function() {
+      smoothScrollToTop();
+    });
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    };
+
+    function smoothScrollToTop() {
+      var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      
+      if (currentScroll > 0) {
+        window.requestAnimationFrame(smoothScrollToTop);
+        window.scrollTo(0, currentScroll - currentScroll / 10);
+      }
+    }
+  </script>
   <script src="./JS/copyrightYear.js"></script>
 </body>
 
