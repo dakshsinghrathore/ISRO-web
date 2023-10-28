@@ -515,6 +515,33 @@ footer .copywrite {
   animation: fadeInUp 0.5s ease-in-out 0.2s;
   animation-fill-mode: both;
 }
+.section-inner-feedback {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+}
+.section-inner-feedback form h3 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.section-inner-feedback form {
+  padding: 3em;
+  /* border: 1px solid red; */
+}
+.section-inner-feedback form td {
+  padding: 7px;
+}
+
+.section-inner-feedback button {
+  margin: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 7px 20px;
+  background: #ccc;
+  border: 1px solid #000;
+}
 
 .section-inner-center gslv p {
   font-size: 25px;
@@ -710,20 +737,20 @@ footer .copywrite {
 
 #back-to-top {
   position: fixed;
-  bottom: 20px; 
-  right: 20px; 
+  bottom: 20px;
+  right: 20px;
   font-size: 2.5rem;
-  background-color: #ff8504; 
-  color: #fff; 
+  background-color: #ff8504;
+  color: #fff;
   border: none;
   height: 50px;
   width: 50px;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
-  display: none; 
+  display: none;
 }
-#first-hover-button{
+#first-hover-button {
   background-color: #000000ab;
 }
 #scrollToTopButton {

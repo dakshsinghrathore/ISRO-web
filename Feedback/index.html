@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="icon" href="../images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Post Your Feedback</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="logo">
+        <a href="../">
+          <img src="../images/logo.png" alt="ISRO" />
+        </a>
+      </div>
+      <nav class="desktop-main-menu">
+        <ul>
+          <li><a href="../PSLV">Polar Satellite LV</a></li>
+          <li><a href="../GSLV ">Geo Satellite LV</a></li>
+          <li><a href="../LMV3">Geo Satellite M3</a></li>
+          <li>
+            <a href="../Communication-Satelites">Communication Satellites</a>
+          </li>
+          <li><a href="../Foreign">Foreign Satellites</a></li>
+        </ul>
+        <div class="menu-content">
+          <div id="menu-navigation">
+            <ul class="nav-link">
+              <li class="nav-item primary">
+                <a href="/Mission.html">Mission</a>
+              </li>
+              <li class="nav-item primary">
+                <a href="/index.html">Launches</a>
+              </li>
+              <li class="nav-item primary"><a href="/Careers/">Careers</a></li>
+              <li class="nav-item primary"><a href="/Updates">Updates</a></li>
+              <li class="nav-item primary"><a href="../Quiz/">Quiz</a></li>
+              <li class="nav-item primary">
+                <a href="../Image_Gallery/index.html">Images</a>
+              </li>
+              <li class="nav-item primary"><a href="">Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+        <button id="menu" onclick="myFunction(this)">
+          <div id="bar">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+        </button>
+      </nav>
+    </header>
+
+    <section class="section-animate bg-hiring"></section>
+    <div class="section-inner-feedback">
+      <form action="">
+        <h3>Feedback/ प्रतिपुष्टि</h3>
+        <table>
+          <tr>
+            <td><label for="name">Name/ नाम</label></td>
+            <td><input type="text" name="Name" /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email/ ईमेल पत्ता</label></td>
+            <td><input type="email" name="email" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="category"
+                >Feedback Category/ प्रतिक्रिया श्रेणी</label
+              >
+            </td>
+            <td>
+              <select name="category">
+                <option value="select">Slect</option>
+                <option value="broken-link">Broken Link</option>
+                <option value="complaint">Complaint</option>
+                <option value="compliment">Compliment</option>
+                <option value="site-contents">Site Contents</option>
+                <option value="site-error">Site Error</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="others">Others</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="message"
+                >Feedback Message/ प्रतिक्रिया संदेश <br />(max 300
+                chars)</label
+              >
+            </td>
+            <td>
+              <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button type="reset">Reset</button
+              ><button type="submit">Submit</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <footer>
+      <ul>
+        <li><b>ISRO &copy; 2023</b></li>
+        <li>
+          <a href="https://twitter.com/isro" target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i> Twitter</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@isroofficial5866" target="_blank"
+            ><i class="fa-brands fa-youtube"></i> YouTube</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/isro/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="../Privacy/"><i class="fa-solid fa-lock"></i> Privacy</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-truck-field"></i> Suppliers</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

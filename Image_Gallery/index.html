@@ -1,241 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Images</title>
     <link rel="stylesheet" href="images.css" />
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="icon" type="icon" href="../images/favicon.png" />
     <script src="images.js" defer></script>
     <script src="../JS/script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <header class="main-header">
-        <div class="logo">
-          <a href="../">
-            <img src="../images/logo.png" alt="ISRO" />
-          </a>
-        </div>
-        <nav class="desktop-main-menu">
-          <ul>
-            <li><a href="../PSLV/index.html">Polar Satellite LV</a></li>
-            <li><a href="../GSLV/index.html">Geo Satellite LV</a></li>
-            <li><a href="../LMV3/index.html">Geo Satellite M3</a></li>
-            <li>
-              <a href="../Communication-Satelites/index.html">Communication Satellites</a>
-            </li>
-            <li><a href="../Foreign/index.html">Foreign Satellites</a></li>
-          </ul>
-          <div class="menu-content">
-            <div id="menu-navigation">
-              <ul class="nav-link">
-                <li class="nav-item primary">
-                  <a href="../Mission.html">Mission</a>
-                </li>
-                <li class="nav-item primary"><a href="">Launches</a></li>
-                <li class="nav-item primary"><a href="../Careers/index.html">Careers</a></li>
-                <li class="nav-item primary"><a href="../Updates/index.html">Updates</a></li>
-                <li class="nav-item primary"><a href="./index.html">Images</a></li>
-              </ul>
-            </div>
+      <div class="logo">
+        <a href="../">
+          <img src="../images/logo.png" alt="ISRO" />
+        </a>
+      </div>
+      <nav class="desktop-main-menu">
+        <ul>
+          <li><a href="../PSLV/index.html">Polar Satellite LV</a></li>
+          <li><a href="../GSLV/index.html">Geo Satellite LV</a></li>
+          <li><a href="../LMV3/index.html">Geo Satellite M3</a></li>
+          <li>
+            <a href="../Communication-Satelites/index.html"
+              >Communication Satellites</a
+            >
+          </li>
+          <li><a href="../Foreign/index.html">Foreign Satellites</a></li>
+        </ul>
+        <div class="menu-content">
+          <div id="menu-navigation">
+            <ul class="nav-link">
+              <li class="nav-item primary">
+                <a href="../Mission.html">Mission</a>
+              </li>
+              <li class="nav-item primary"><a href="">Launches</a></li>
+              <li class="nav-item primary">
+                <a href="../Careers/index.html">Careers</a>
+              </li>
+              <li class="nav-item primary">
+                <a href="../Updates/index.html">Updates</a>
+              </li>
+              <li class="nav-item primary"><a href="../Quiz/">Quiz</a></li>
+              <li class="nav-item primary">
+                <a href="./index.html">Images</a>
+              </li>
+              <li class="nav-item primary">
+                <a href="/Feedback/">Feedback</a>
+              </li>
+            </ul>
           </div>
-          <button id="menu" onclick="myFunction(this)">
-            <div id="bar">
-              <div id="bar1" class="bar"></div>
-              <div id="bar2" class="bar"></div>
-              <div id="bar3" class="bar"></div>
-            </div>
-          </button>
-        </nav>
-      </header>
-    
+        </div>
+        <button id="menu" onclick="myFunction(this)">
+          <div id="bar">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+        </button>
+      </nav>
+    </header>
+
     <!-- Image Gallery -->
     <div class="container">
-        <h1>Images</h1>
-        <!-- Filter Buttons -->
-        <div class="filter_buttons">
-            <button class="active" data-name="all">Show all</button>
-            <button data-name="launchers">Launchers</button>
-            <button data-name="missions">Missions</button>
-            <button data-name="facilities">Facilities</button>
-        </div>
-        <!-- Images -->
-        <div class="filter_images">
-            <div data-name="launchers" class="card">
-                <img src="./images/pslv.webp"/>
-                <div class="card_body">
-                    <p>Polar Satellite Launch Vehicle (PSLV)</p>
-                </div>
-            </div>
-            <div data-name="launchers" class="card">
-                <img src="./images/gslv.jpg"/>
-                <div class="card_body">
-                    <p>Geosynchronous Satellite Launch Vehicle (GSLV)</p>
-                </div>
-            </div>
-            <div data-name="launchers" class="card">
-                <img src="./images/lvm3.webp"/>
-                <div class="card_body">
-                    <p>Geosynchronous Satellite Launch Vehicle Mark III (LVM3)</p>
-                </div>
-            </div>            
-            <div data-name="launchers" class="card">
-                <img src="./images/sounding_rocket.jpg"/>
-                <div class="card_body">
-                    <p>Sounding Rockets</p>
-                </div>
-            </div>            
-            <div data-name="missions" class="card">
-                <img src="./images/Chandrayaan-1.jpg"/>
-                <div class="card_body">
-                    <p>Chandrayaan-1</p>
-                </div>
-            </div>        
-            <div data-name="missions" class="card">
-                <img src="./images//Chandrayaan-2.jpg"/>
-                <div class="card_body">
-                    <p>Chandrayaan-2</p>
-                </div>
-            </div>  
-            <div data-name="missions" class="card">
-                <img src="./images/chandrayaan-3.png"/>
-                <div class="card_body">
-                    <p>Chandrayaan-3</p>
-                </div>
-            </div>      
-            <div data-name="missions" class="card">
-                <img src="./images/Aditya-L1.avif"/>
-                <div class="card_body">
-                    <p>Aditya-L1</p>
-                </div>
-            </div>            
-            <div data-name="missions" class="card">
-                <img src="./images/Mars_Orbiter_Mission.jpg"/>
-                <div class="card_body">
-                    <p>Mars Orbiter Mission (MOM)</p>
-                </div>
-            </div>            
-            <div data-name="missions" class="card">
-                <img src="./images/Astrosat.png"/>
-                <div class="card_body">
-                    <p>ASTROSAT</p>
-                </div>
-            </div>    
-            <div data-name="missions" class="card">
-              <img src="./images/Gaganyan_mission.jpg"/>
-              <div class="card_body">
-                  <p>Gaganyaan Mission</p>
-              </div>
-          </div>     
-          <div data-name="missions" class="card">
-            <img src="./images/gaganayan1.jpg"/>
-            <div class="card_body">
-                <p>Gaganyaan Mission details</p>
-            </div>
-        </div>    
-        <div data-name="missions" class="card">
-          <img src="./images/gaganyaan2.png"/>
+      <h1>Images</h1>
+      <!-- Filter Buttons -->
+      <div class="filter_buttons">
+        <button class="active" data-name="all">Show all</button>
+        <button data-name="launchers">Launchers</button>
+        <button data-name="missions">Missions</button>
+        <button data-name="facilities">Facilities</button>
+      </div>
+      <!-- Images -->
+      <div class="filter_images">
+        <div data-name="launchers" class="card">
+          <img src="./images/pslv.webp" />
           <div class="card_body">
-              <p>Gaganyaan Mission rover</p>
+            <p>Polar Satellite Launch Vehicle (PSLV)</p>
           </div>
-      </div>     
-            <div data-name="facilities" class="card">
-                <img src="./images/vikram sarabhai space centre.webp"/>
-                <div class="card_body">
-                    <p>Vikram Sarabhai Space Centre</p>
-                </div>
-            </div>            
-            <div data-name="facilities" class="card">
-                <img src="./images/liquid propulsion systems centre.jpg"/>
-                <div class="card_body">
-                    <p>Liquid Propulsion Systems Centre</p>
-                </div>
-            </div>            
-            <div data-name="facilities" class="card">
-                <img src="./images//physical research laboratory.webp"/>
-                <div class="card_body">
-                    <p>Physical Research Laboratory</p>
-                </div>
-            </div>            
-            <div data-name="facilities" class="card">
-                <img src="./images/national atmospheric research laboratory.jpg"/>
-                <div class="card_body">
-                    <p>National Atmospheric Research Laboratory</p>
-                </div>
-            </div>
-            <div data-name="facilities" class="card">
-                <img src="./images/Space Application Centre.jpeg"/>
-                <div class="card_body">
-                    <p>Space Application Centre</p>
-                </div>
-            </div>
-            <div data-name="facilities" class="card">
-                <img src="./images/North Eastern Space Applications Centre.jpg"/>
-                <div class="card_body">
-                    <p>North Eastern Space Applications Centre</p>
-                </div>
-            </div>
-            <div data-name="missions" class="card">
-              <img src="./images/gaganyan34.png"/>
-              <div class="card_body">
-                  <p>The first man boarded space mission</p>
-              </div>
-            </div>   
-            <div data-name="missions" class="card">
-              <img src="./images/ISRO test vehicle.jpg"/>
-              <div class="card_body">
-                  <p>ISRO test vehicle ahead of human space flight programme.</p>
-              </div>
-            </div>   
-            <div data-name="missions" class="card">
-              <img src="./images/isro-space-suit.jpg"/>
-              <div class="card_body">
-                  <p>ISRO displays the space suit for the Gaganyaan crew members.</p>
-              </div>
-            </div>   
-            <div data-name="missions" class="card">
-              <img src="./images/ISRO LVM3.jpg"/>
-              <div class="card_body">
-                  <p>From astronauts training to tech Upgrade.</p>
-              </div>
-            </div>   
-            <div data-name="missions" class="card">
-              <img src="./images/Gaganyaan-IVA-astronaut-suit.jpg"/>
-              <div class="card_body">
-                  <p>Gaganyaan astronaut training has a three-semester curriculum.</p>
-              </div>
-            </div>   
         </div>
+        <div data-name="launchers" class="card">
+          <img src="./images/gslv.jpg" />
+          <div class="card_body">
+            <p>Geosynchronous Satellite Launch Vehicle (GSLV)</p>
+          </div>
+        </div>
+        <div data-name="launchers" class="card">
+          <img src="./images/lvm3.webp" />
+          <div class="card_body">
+            <p>Geosynchronous Satellite Launch Vehicle Mark III (LVM3)</p>
+          </div>
+        </div>
+        <div data-name="launchers" class="card">
+          <img src="./images/sounding_rocket.jpg" />
+          <div class="card_body">
+            <p>Sounding Rockets</p>
+          </div>
+        </div>
+        <div data-name="missions" class="card">
+          <img src="./images/Chandrayaan-1.jpg" />
+          <div class="card_body">
+            <p>Chandrayaan-1</p>
+          </div>
+        </div>
+        <div data-name="missions" class="card">
+          <img src="./images//Chandrayaan-2.jpg" />
+          <div class="card_body">
+            <p>Chandrayaan-2</p>
+          </div>
+        </div>
+        <div data-name="missions" class="card">
+          <img src="./images/chandrayaan-3.png" />
+          <div class="card_body">
+            <p>Chandrayaan-3</p>
+          </div>
+        </div>
+        <div data-name="missions" class="card">
+          <img src="./images/Aditya-L1.avif" />
+          <div class="card_body">
+            <p>Aditya-L1</p>
+          </div>
+        </div>
+        <div data-name="missions" class="card">
+          <img src="./images/Mars_Orbiter_Mission.jpg" />
+          <div class="card_body">
+            <p>Mars Orbiter Mission (MOM)</p>
+          </div>
+        </div>
+        <div data-name="missions" class="card">
+          <img src="./images/Astrosat.png" />
+          <div class="card_body">
+            <p>ASTROSAT</p>
+          </div>
+        </div>
+        <div data-name="missions" class="card">
+          <img src="./images/Gaganyan_mission.jpg" />
+          <div class="card_body">
+            <p>Gaganyaan Mission</p>
+          </div>
+        </div>
+        <div data-name="missions" class="card">
+          <img src="./images/gaganayan1.jpg" />
+          <div class="card_body">
+            <p>Gaganyaan Mission details</p>
+          </div>
+        </div>
+        <div data-name="missions" class="card">
+          <img src="./images/gaganyaan2.png" />
+          <div class="card_body">
+            <p>Gaganyaan Mission rover</p>
+          </div>
+        </div>
+        <div data-name="facilities" class="card">
+          <img src="./images/vikram sarabhai space centre.webp" />
+          <div class="card_body">
+            <p>Vikram Sarabhai Space Centre</p>
+          </div>
+        </div>
+        <div data-name="facilities" class="card">
+          <img src="./images/liquid propulsion systems centre.jpg" />
+          <div class="card_body">
+            <p>Liquid Propulsion Systems Centre</p>
+          </div>
+        </div>
+        <div data-name="facilities" class="card">
+          <img src="./images//physical research laboratory.webp" />
+          <div class="card_body">
+            <p>Physical Research Laboratory</p>
+          </div>
+        </div>
+        <div data-name="facilities" class="card">
+          <img src="./images/national atmospheric research laboratory.jpg" />
+          <div class="card_body">
+            <p>National Atmospheric Research Laboratory</p>
+          </div>
+        </div>
+        <div data-name="facilities" class="card">
+          <img src="./images/Space Application Centre.jpeg" />
+          <div class="card_body">
+            <p>Space Application Centre</p>
+          </div>
+        </div>
+        <div data-name="facilities" class="card">
+          <img src="./images/North Eastern Space Applications Centre.jpg" />
+          <div class="card_body">
+            <p>North Eastern Space Applications Centre</p>
+          </div>
+        </div>
+        <div data-name="missions" class="card">
+          <img src="./images/gaganyan34.png" />
+          <div class="card_body">
+            <p>The first man boarded space mission</p>
+          </div>
+        </div>
+        <div data-name="missions" class="card">
+          <img src="./images/ISRO test vehicle.jpg" />
+          <div class="card_body">
+            <p>ISRO test vehicle ahead of human space flight programme.</p>
+          </div>
+        </div>
+        <div data-name="missions" class="card">
+          <img src="./images/isro-space-suit.jpg" />
+          <div class="card_body">
+            <p>ISRO displays the space suit for the Gaganyaan crew members.</p>
+          </div>
+        </div>
+        <div data-name="missions" class="card">
+          <img src="./images/ISRO LVM3.jpg" />
+          <div class="card_body">
+            <p>From astronauts training to tech Upgrade.</p>
+          </div>
+        </div>
+        <div data-name="missions" class="card">
+          <img src="./images/Gaganyaan-IVA-astronaut-suit.jpg" />
+          <div class="card_body">
+            <p>Gaganyaan astronaut training has a three-semester curriculum.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <ul>
-          <li><b>ISRO &copy; 2023</b></li>
-          <li>
-            <a href="https://twitter.com/isro" target="_blank"
-              ><i class="fa-brands fa-x-twitter"></i>Twitter</a
-            >
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@isroofficial5866" target="_blank"
-              ><i class="fa-brands fa-youtube"></i> YouTube</a
-            >
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/company/isro/" target="_blank"
-              ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
-            >
-          </li>
-          <li>
-            <a href="../Privacy/"><i class="fa-solid fa-lock"></i> Privacy</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-truck-field"></i> Suppliers</a>
-          </li>
-        </ul>
-      </footer>
-</body>
+      <ul>
+        <li><b>ISRO &copy; 2023</b></li>
+        <li>
+          <a href="https://twitter.com/isro" target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i>Twitter</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@isroofficial5866" target="_blank"
+            ><i class="fa-brands fa-youtube"></i> YouTube</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/isro/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="../Privacy/"><i class="fa-solid fa-lock"></i> Privacy</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-truck-field"></i> Suppliers</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
