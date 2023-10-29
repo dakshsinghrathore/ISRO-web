@@ -55,4 +55,4 @@ We intend to express our gratitude by presenting a modest token of appreciation 
 
 ## ©️ License
 
-The project is licensed under the [MIT License](https://github.com/neelshah2409/Bot-Collection/blob/main/LICENSE).
+The project is licensed under the [MIT License](https://github.com/dakshsinghrathore/ISRO-web?tab=MIT-1-ov-file#readme).
