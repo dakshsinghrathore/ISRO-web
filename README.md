@@ -1,6 +1,21 @@
 <h1 align=left> ISRO-Web 🧑🏽‍🚀 </h1>
 Welcome 👋
 
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=dakshsinghrathore%2FISRO-web%20&countColor=%23263759&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/dakshsinghrathore/ISRO-web)
+![GitHub Repo stars](https://img.shields.io/github/stars/dakshsinghrathore/ISRO-web)
+![GitHub contributors](https://img.shields.io/github/contributors/dakshsinghrathore/ISRO-web)
+![GitHub last commit](https://img.shields.io/github/last-commit/dakshsinghrathore/ISRO-web)
+![GitHub repo size](https://img.shields.io/github/repo-size/dakshsinghrathore/ISRO-web)
+
+![Github](https://img.shields.io/github/license/dakshsinghrathore/ISRO-web)
+![GitHub issues](https://img.shields.io/github/issues/dakshsinghrathore/ISRO-web)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/dakshsinghrathore/ISRO-web)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/dakshsinghrathore/ISRO-web)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/dakshsinghrathore/ISRO-web)
+
 <p>
 My project, ISRO-web, draws inspiration from the design and user experience of SpaceX's official website. This endeavor reflects my aspiration to bring a similar level of user engagement and innovation to ISRO's online presence. By adapting the aesthetic and functionality of SpaceX's website, my efforts are focused on enhancing ISRO's digital platform to better showcase its achievements, missions, and contributions to space exploration
 
