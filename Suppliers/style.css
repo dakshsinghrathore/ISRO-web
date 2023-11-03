@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+*{
+    overflow: auto;
+    font-family: monospace;
+    /* font-weight: bold; */
+    font-size: 17px;
+    line-height: 1.5;
+    text-transform: none;
+} 
+
+main{
+    padding-top: 10%;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading-para{
+    font-size: 14px;
+    color: rgb(205, 199, 199);
+    padding-bottom: 14px;
+}
+.main-child{
+    /* border: 2px solid chartreuse; */
+    display: flex;
+    height: auto;
+    width: 55%;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px;
+}
+
+.main-child > h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.main-image{
+    height: 15%;
+    margin: 12px;
+}
+a{
+    text-decoration: underline;
+    color: white;
+}
+
+.main-child > p + p{
+    margin: 10px;
+}
+.supplier-images{
+    margin: 12px;
+    height: 500px;
+}
+
+.credits-span, .credits-span > a{
+    font-size: 11px;
+    text-align: center;
+    margin: 15px;
+}
+
+.mech-suppliers-img{
+    height: 45vh;
+}
+
+h2 + p{
+    margin: 13px 0;
+}
+
+h2{
+    font-size: 27px;
+}
+
+li{
+    list-style-type: disc;
+    color: white;
+    line-height: 2;
+    margin-left: 10px;
+}
