@@ -18,7 +18,7 @@
       .card {
         display: flex;
         justify-content: center;
-
+        /* align-items: center; */
         border: 1px solid #ccc;
         border-radius: 5px;
         padding: 10px;
@@ -27,7 +27,7 @@
         position: relative;
       }
       .stats1 {
-        max-width: 960px;
+        width: 60%;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -35,9 +35,18 @@
         text-align: center;
         text-transform: uppercase;
       }
+
+      /* Media query for mobile devices */
+@media (max-width: 768px) {
+  .stats1 {
+    width: 100%;
+  }
+}
+
+
       /* Style for the image on the left */
       .card img {
-        max-width: 500px; /* Adjust the maximum width of the image as needed */
+        max-width: 60%; /* Adjust the maximum width of the image as needed */
         height: auto;
         margin-right: 10px;
       }
