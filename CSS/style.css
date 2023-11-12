@@ -205,8 +205,9 @@ section {
 
 .scroll-arrow {
   position: absolute;
-  bottom: -170px;
-  /* left: 500px; */
+  bottom: 0px;
+  left: 50%;
+  right: 50%;
   right: 0;
   animation: fadeBounce 3s infinite;
 }
