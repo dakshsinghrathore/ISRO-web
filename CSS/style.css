@@ -467,7 +467,7 @@ footer .copywrite {
 }
 
 .bg-hiring {
-  background-image: url("../images/jobs.jpg");
+  background-image: url("../images/ch3_lander_Right.jpeg");
 }
 
 .bg-spacex {
@@ -775,4 +775,7 @@ footer .copywrite {
 
 #scrollToTopButton:hover {
   background-color: #0056b3;
+}
+.pointer-cursor{
+  cursor: pointer;
 }
