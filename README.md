@@ -62,7 +62,7 @@ We value the time and effort you put into contributing, and we look forward to r
 We intend to express our gratitude by presenting a modest token of appreciation to the top three contributors of our project.
 
 <div align=center>
-  <h2>This Project is the part of</h2>
+  <h2>This Project was the part of</h2>
   <!-- <img alt="hacktoberfest" src="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png#gh-light-mode-only" width=87%> -->
   <!-- <img alt="hacktoberfest" src="https://github.com/dakshsinghrathore/ISRO-web/assets/115932772/7bf7edc1-eeee-4e55-82fe-5f756ef7d11c#gh-dark-mode-only"/> -->
   <img alt="hacktoberfest" src="https://hacktoberfest.com/_next/static/media/opengraph.e5fafe07.png"/>
