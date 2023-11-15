@@ -476,7 +476,6 @@ footer .copywrite {
 .bg-mission1 {
   background-image: url("../images/mission1-transformed.png");
   background-size: cover;
-
 }
 .bg-mission2 {
   background-image: url("../images/mission2-transformed.jpg");
@@ -505,7 +504,6 @@ footer .copywrite {
   text-align: center;
   width: 80%;
 }
-
 
 .section-inner-center h3 {
   font-size: 80px;
@@ -763,19 +761,14 @@ footer .copywrite {
   bottom: 20px;
   right: 20px;
   z-index: 99;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+  background-color: transparent;
+  border: 2px solid #ff8504;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   font-size: 24px;
   cursor: pointer;
 }
-
-#scrollToTopButton:hover {
-  background-color: #0056b3;
-}
-.pointer-cursor{
+.pointer-cursor {
   cursor: pointer;
 }
