@@ -68,6 +68,7 @@ ul {
 
 .desktop-main-menu ul {
   display: flex;
+  margin-bottom: 0rem;
   /*value flex is used so that the li's inside of ul are put inside a row*/
 }
 
