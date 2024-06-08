@@ -1,4 +1,4 @@
-let copyRightYear = document.getElementById("copyright-year");
-let currentDate = new Date();
-let currentYear = currentDate.getFullYear();
+const copyRightYear = document.getElementById("copyright-year");
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
 copyRightYear.innerText = currentYear;
