@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" type="icon" href="../images/favicon.png" />
+    <style>
+      .custom-font-form{
+
+        font-family: "Eczar", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+
+      }
+    </style>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -12,6 +22,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Post Your Feedback</title>
   </head>
 
@@ -60,60 +75,85 @@
         </button>
       </nav>
     </header>
+    <br><br><br>
+    <div class="min-h-screen bg-gray-800 py-6 flex flex-col justify-center sm:py-12 custom-font-form">
+      <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+          <div
+              class="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-full-3xl">
+          </div>
+          <div class="text-white relative px-4 py-10 bg-indigo-400 shadow-lg sm:rounded-full-3xl sm:p-20">
+  
+              <div class="text-center pb-6">
+                  <h1 class="text-3xl">Feedback/ प्रतिपुष्टि</h1>
+  
+                  <p class="text-gray-300">
+                      Fill up the form below to send us a message. We highly value your inputs.
+                  </p>
+              </div>
+  
+              <form>
 
-    <section class="section-animate bg-hiring"></section>
-    <div class="section-inner-feedback">
-      <form action="">
-        <h3>Feedback/ प्रतिपुष्टि</h3>
-        <table>
-          <tr>
-            <td><label for="name">Name/ नाम</label></td>
-            <td><input type="text" name="Name" /></td>
-          </tr>
-          <tr>
-            <td><label for="email">Email/ ईमेल पत्ता</label></td>
-            <td><input type="email" name="email" /></td>
-          </tr>
-          <tr>
-            <td>
-              <label for="category"
-                >Feedback Category/ प्रतिक्रिया श्रेणी</label
-              >
-            </td>
-            <td>
-              <select name="category">
-                <option value="select">Select</option>
-                <option value="broken-link">Broken Link</option>
-                <option value="complaint">Complaint</option>
-                <option value="compliment">Compliment</option>
-                <option value="site-contents">Site Contents</option>
-                <option value="site-error">Site Error</option>
-                <option value="suggestion">Suggestion</option>
-                <option value="others">Others</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label for="message"
-                >Feedback Message/ प्रतिक्रिया संदेश <br />(max 300
-                chars)</label
-              >
-            </td>
-            <td>
-              <textarea name="message" id="" cols="30" rows="10"></textarea>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td >
-              <button type="reset" class="pointer-cursor">Reset</button>
-              <button type="submit" class="pointer-cursor">Submit</button>
-            </td>
-          </tr>
-        </table>
-      </form>
-    </div>
+                  <label class="flex  items-center mb-2 text-gray-600 text-sm font-medium" for="name">Name/ नाम<svg width="7" height="7" class="ml-1" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z" fill="#EF4444" />
+                    </svg>
+                  </label>
+  
+                  <input
+                          class="shadow mb-4 appearance-none border rounded-full w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                          type="text" placeholder="Enter your name" name="name" id="name" required>
+                  
+                  <label class="flex  items-center mb-2 text-gray-600 text-sm font-medium" for="email">Email/ ईमेल पत्ता<svg width="7" height="7" class="ml-1" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z" fill="#EF4444" />
+                      </svg>
+                      </label>
+
+
+                  <input
+                          class="shadow mb-4 appearance-none border rounded-full w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                          type="email" placeholder="Email" name="email" id="email" required>
+                      
+                          <label class="flex items-center mb-2 text-gray-600 text-sm font-medium" for="category">Feedback Category/ प्रतिक्रिया श्रेणी
+                              <svg width="7" height="7" class="ml-1" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z" fill="#EF4444" />
+                              </svg>
+                          </label>
+                          
+                          <select 
+                              id="category" 
+                              name="category" 
+                              required 
+                              class="shadow mb-4 appearance-none border rounded-full w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                          >
+                              <option value="">Select Feedback Category</option>
+                              <option value="broken-link">Broken Link</option>
+                              <option value="complaint">Complaint</option>
+                              <option value="compliment">Compliment</option>
+                              <option value="site-contents">Site Contents</option>
+                              <option value="site-error">Site Error</option>
+                              <option value="suggestion">Suggestion</option>
+                              <option value="others">Others</option>
+                          </select>
+  
+                  <label class="flex  items-center mb-2 text-gray-600 text-sm font-medium" for="message">Feedback Message/ प्रतिक्रिया संदेश<svg width="7" height="7" class="ml-1" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z" fill="#EF4444" />
+                      </svg></label>
+                  <textarea
+                          class="shadow mb-4 min-h-0 appearance-none border rounded-3xl h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                          type="text" placeholder="Type your feedback here..." name="message" id="message style="height: 121px;"></textarea>
+  
+                  <div class="flex justify-between">
+                      <input
+                          class="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
+                          type="reset">
+                      <input
+                          class="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
+                          type="submit" value="Send ➤">
+                  </div>
+  
+              </form>
+          </div>
+      </div>
+  </div>
 
     <footer>
       <ul>
