@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISRO Press Release</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        btprimary: '#252752',
+                        primary: '#28282867',
+                        secondary: '#E3963E',
+                        accent: '#e84118',
+                        textLight: '#f5f6fa',
+                        textDark: '#3e6baa',
+                        cardBg: 'rgba(26, 26, 26, 0.457)',
+                        modalBg: 'rgba(30, 39, 46, 0.95)',
+                    },
+                    animation: {
+                        float: 'float 15s infinite ease-in-out',
+                        bounce: 'bounce 1.4s infinite ease-in-out both',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-20px) rotate(5deg)' },
+                        },
+                        bounce: {
+                            '0%, 80%, 100%': { transform: 'scale(0)' },
+                            '40%': { transform: 'scale(1)' },
+                        }
+                    },
+                    backdropBlur: {
+                        xs: '1px',
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 80%, 100% {
+                transform: scale(0);
+            }
+            40% {
+                transform: scale(1);
+            }
+        }
+        
+        .animate-float {
+            animation: float 15s infinite ease-in-out;
+        }
+        
+        .animate-bounce-dot:nth-child(1) {
+            animation-delay: -0.32s;
+        }
+        
+        .animate-bounce-dot:nth-child(2) {
+            animation-delay: -0.16s;
+        }
+        
+        .bg-gradient-text {
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-black text-textLight min-h-screen overflow-x-hidden flex flex-col">
+    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format=jpg&crop=entropy&cs=tinysrgb&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ%22%20alt=%22Space%20Background%22%20class=%22bg-image" alt="Space Background" class="fixed top-0 left-0 w-full h-full z-[-2] object-cover opacity-70">
+    <header class="main-header">
+        <div class="logo">
+          <a href="./">
+            <img src="../images/logo.png" alt="ISRO" />
+          </a>
+        </div>
+        <nav class="desktop-main-menu">
+          <ul class="nav-items">
+            <li><a href="./PSLV/">Polar Satellite LV</a></li>
+            <li><a href="./GSLV/">Geo Satellite LV</a></li>
+            <li><a href="./LMV3/">Geo Satellite M3</a></li>
+            <li>
+              <a href="./Communication-Satelites/">Communication Satellites</a>
+            </li>
+            <li><a href="./Foreign/">Foreign Satellites</a></li>
+          </ul>
+          <div class="menu-content hidden">
+            <div id="menu-navigation">
+              <ul class="nav-link">
+                <li class="nav-item primary " id="secondary"><a> <span>Satellites</span> <span
+                      class="material-symbols-outlined">
+                      arrow_drop_down
+                    </span></a></li>
+                <ul>
+                  <li class="nav-item primary satellite-option"><a href="./PSLV/">PSLV</a></li>
+                  <li class="nav-item primary satellite-option"><a href="./GSLV/">GSLV</a></li>
+                  <li class="nav-item primary satellite-option"><a href="./LMV3/">GEO SATELLITE</a></li>
+                  <li class="nav-item primary satellite-option"><a href="./Communication-Satelites/">COMMUNICATION
+                      SATELLITES</a></li>
+                  <li class="nav-item primary satellite-option"><a href="./Foreign/">FOREIGN SATELLITES</a></li>
+                </ul>
+                <li class="nav-item primary ">
+                  <a href="Mission.html">Mission</a>
+                </li>
+                <li class="nav-item primary"><a href="">Launches</a></li>
+                <li class="nav-item primary"><a href="./Careers/index.html">Careers</a></li>
+                <li class="nav-item primary"><a href="./Updates">Updates</a></li>
+                <li class="nav-item primary"><a href="./Quiz/index.html">Quiz</a></li>
+                <li class="nav-item primary"><a href="./Image_Gallery/index.html">Images</a></li>
+                <li class="nav-item primary"><a href="/Feedback/index.html">Feedback</a></li>
+              </ul>
+            </div>
+          </div>
+          <button id="menu" onclick="myFunction(this)">
+            <div id="bar">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+          </button>
+        </nav>
+      </header>
+    <div class="max-w-7xl mx-auto p-5 flex-1 w-full">
+          <div class="py-20 text-center relative">
+            <div class="flex items-center justify-center mb-5">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Indian_Space_Research_Organisation_Logo.svg/1200px-Indian_Space_Research_Organisation_Logo.svg.png" alt="ISRO Logo" class="w-20 h-20 mr-5 object-contain p-1">
+                <h1 class="text-7xl mb-2 inline-block">ISRO Press Release</h1>
+            </div>
+            <p class="text-2xl mb-8 text-secondary">Latest updates and announcements from the Indian Space Research Organisation</p>
+            
+            <img src="satellite.png" alt="Satellite" class="absolute top-[30%] right-[10%] w-20 opacity-60 pointer-events-none animate-float z-[-1]">
+            </div>
+        <div class="flex flex-wrap justify-between items-center mb-8 bg-[rgba(30,39,46,0.7)] p-5 rounded-lg backdrop-blur-md border border-white/10">
+            <!-- Search box container -->
+            <div class="flex flex-1 mr-5 md:mr-10 lg:mr-10 xl:mr-0 relative">
+                <input type="text" id="search-input" placeholder="Search press releases..." class="w-full py-3 px-5 border-none rounded-full bg-white/10 text-textLight text-base outline-none transition-all duration-300 border border-white/20 focus:bg-white/15 focus:shadow-lg focus:shadow-[rgb(26, 34, 76)]">
+                <i class="fas fa-search absolute right-4 top-1/2 transform -translate-y-1/2 text-secondary"></i>
+            </div>
+            
+            <!-- Year filters container -->
+            <div class="flex flex-wrap mt-5 gap-4" id="year-filters">
+                <button class="year-filter py-2 px-5 bg-primary border border-primary rounded-full text-textLight cursor-pointer transition-all duration-300 outline-none active" id="all">All</button>
+                <!-- Year filters will be added dynamically based on data -->
+            </div>
+        </div>
+
+        <!-- View toggle buttons -->
+        <div class="flex justify-end mb-4">
+            <div class="bg-[rgba(30,39,46,0.7)] rounded-lg backdrop-blur-md border border-white/10 p-1 inline-flex">
+                <button id="card-view-btn" class="py-2 px-4 text-sm rounded-lg flex items-center transition-all duration-300" title="Card View">
+                    <i class="fas fa-th-large mr-2"></i> Card View
+                </button>
+                <button id="list-view-btn" class="py-2 px-4 text-sm rounded-lg flex items-center transition-all duration-300" title="List View">
+                    <i class="fas fa-list mr-2"></i> List View
+                </button>
+            </div>
+        </div>
+
+        <div id="releases-container" class="mb-10">
+            <div class="flex justify-center items-center h-50">
+                <div class="flex">
+                    <div class="w-5 h-5 bg-secondary rounded-full mx-1 animate-bounce animate-bounce-dot"></div>
+                    <div class="w-5 h-5 bg-secondary rounded-full mx-1 animate-bounce animate-bounce-dot"></div>
+                    <div class="w-5 h-5 bg-secondary rounded-full mx-1 animate-bounce animate-bounce-dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-5 bg-[rgba(30,39,46,0.7)] backdrop-blur-md">
+        <p>For more information, visit the <a href="https://www.isro.gov.in/" target="_blank" class="text-secondary hover:text-primary transition-colors duration-300">official ISRO website</a></p>
+    </footer>
+
+    <div class="hidden fixed top-0 left-0 w-full h-full bg-black/80 z-100 justify-center items-center backdrop-blur-sm" id="release-modal">
+        <div class="bg-modalBg w-[90%] max-w-xl rounded-lg p-8 relative border border-white/10 shadow-lg shadow-[rgba(140,122,230,0.5)] max-h-[90vh] overflow-y-auto">
+            <button class="absolute top-5 right-5 bg-transparent border-none text-textLight text-2xl cursor-pointer transition-all duration-300 hover:text-accent hover:rotate-90" id="close-modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="text-2xl mb-5 text-secondary" id="modal-title"></h2>
+            <p class="text-base mb-5 text-textLight opacity-70" id="modal-date"></p>
+            <div class="mb-8 leading-relaxed" id="modal-body">
+                <!-- Modal content goes here -->
+            </div>
+            <a href="https://www.isro.gov.in/" target="_blank" class="btn animate" id="first-hover-button">
+                <div class="hover">
+                  <span>Visit ISRO Website</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Fetch ISRO press release data
+            let pressData = {};
+            let filteredData = [];
+            let currentFilter = 'all';
+            let searchQuery = '';
+            let currentView = localStorage.getItem('isroViewPreference') || 'card'; // Get saved preference or default to card
+            
+            const releasesContainer = document.getElementById('releases-container');
+            const yearFilters = document.getElementById('year-filters');
+            const searchInput = document.getElementById('search-input');
+            const modal = document.getElementById('release-modal');
+            const closeModal = document.getElementById('close-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalDate = document.getElementById('modal-date');
+            const modalBody = document.getElementById('modal-body');
+            const cardViewBtn = document.getElementById('card-view-btn');
+            const listViewBtn = document.getElementById('list-view-btn');
+            
+            // Toggle between view modes
+            function setViewMode(mode) {
+                currentView = mode;
+                localStorage.setItem('isroViewPreference', mode);
+                
+                // Update button styles
+                if (mode === 'card') {
+                    cardViewBtn.classList.add('bg-secondary', 'text-white');
+                    listViewBtn.classList.remove('bg-secondary', 'text-white');
+                } else {
+                    listViewBtn.classList.add('bg-secondary', 'text-white');
+                    cardViewBtn.classList.remove('bg-secondary', 'text-white');
+                }
+                
+                // Re-render the releases with the current view mode
+                renderReleases();
+            }
+            
+            // Set initial button state
+            setViewMode(currentView);
+            
+            // Add click event listeners to view toggle buttons
+            cardViewBtn.addEventListener('click', () => setViewMode('card'));
+            listViewBtn.addEventListener('click', () => setViewMode('list'));
+            
+            try {
+                const response = await fetch("http://localhost:3000/isro-press");
+                pressData = await response.json();
+                
+                // Create year filters
+                createYearFilters(pressData);
+                
+                // Show all press releases initially
+                filterReleases('all');
+                
+                // Hide loader
+                //document.querySelector('.loader').style.display = 'none';
+            } catch (error) {
+                console.error("Error fetching data:", error);
+                releasesContainer.innerHTML = `
+                    <div class="text-center py-12 w-full">
+                        <p>Failed to load press releases. Please try again later.</p>
+                    </div>
+                `;
+            }
+            
+            // Create year filter buttons
+            function createYearFilters(data) {
+                const years = Object.keys(data).sort((a, b) => b - a); // Sort years descending
+                
+                years.forEach(year => {
+                    const count = data[year].length;
+                    const button = document.createElement('button');
+                    button.className = 'year-filter py-2 px-5 bg-white/10 border border-white/20 rounded-full text-textLight cursor-pointer transition-all duration-300 outline-none hover:bg-primary hover:border-primary';
+                    button.setAttribute('data-year', year);
+                    button.innerHTML = `${year} <span class="ml-1 text-xs bg-white/20 py-0.5 px-1.5 rounded-full">${count}</span>`;
+                    
+                    button.addEventListener('click', () => {
+                        filterReleases(year);
+                        
+                        // Update active state
+                        document.querySelectorAll('.year-filter').forEach(btn => {
+                            btn.classList.remove('bg-primary', 'border-primary');
+                            btn.classList.add('bg-white/10', 'border-white/20');
+                        });
+                        button.classList.remove('bg-white/10', 'border-white/20');
+                        button.classList.add('bg-primary', 'border-primary');
+                    });
+                    
+                    yearFilters.appendChild(button);
+                });
+            }
+            
+            // Filter releases by year and search query
+            function filterReleases(year) {
+                currentFilter = year;
+                renderReleases();
+            }
+            
+            // Render releases based on current filter, search, and view mode
+            function renderReleases() {
+                releasesContainer.innerHTML = '';
+                const all = document.getElementById('all');
+                let results = [];
+                
+                // Set the appropriate container class based on view mode
+                if (currentView === 'card') {
+                    releasesContainer.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10';
+                } else {
+                    releasesContainer.className = 'flex flex-col gap-4 mb-10';
+                }
+                
+                if (currentFilter === 'all') {
+                    // Get all releases from all years
+                    document.querySelectorAll('.year-filter').forEach(btn => {
+                            btn.classList.remove('bg-primary', 'border-primary');
+                            btn.classList.add('bg-white/10', 'border-white/20');
+                    });
+
+                    all.classList.remove('bg-white/10', 'border-white/20');
+                    all.classList.add('bg-primary', 'border-primary');
+                    Object.keys(pressData).forEach(year => {
+                        results = [...results, ...pressData[year].map(release => ({...release, year}))];
+                    });
+                } else {
+                    all.classList.add('bg-white/10', 'border-white/20');
+                    all.classList.remove('bg-primary', 'border-primary');
+                    // Get releases from selected year
+                    results = pressData[currentFilter].map(release => ({...release, year: currentFilter}));
+                }
+                
+                // Apply search filter if search query exists
+                if (searchQuery.trim() !== '') {
+                    const query = searchQuery.toLowerCase();
+                    results = results.filter(release => 
+                        release.Title.toLowerCase().includes(query) || 
+                        release.Date.toLowerCase().includes(query)
+                    );
+                }
+                
+                // Sort by date descending (most recent first)
+                results.sort((a, b) => {
+                    const dateA = new Date(a.Date.replace(/,/g, ' '));
+                    const dateB = new Date(b.Date.replace(/,/g, ' '));
+                    return dateB - dateA;
+                });
+                
+                if (results.length === 0) {
+                    releasesContainer.innerHTML = `
+                        <div class="text-center py-12 w-full">
+                            <p>No press releases found matching your criteria.</p>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                // Render based on current view mode
+                if (currentView === 'card') {
+                    renderCardView(results);
+                } else {
+                    renderListView(results);
+                }
+            }
+            
+            // Render releases as cards
+            function renderCardView(results) {
+                results.forEach(release => {
+                    const card = document.createElement('div');
+                    card.className = 'bg-cardBg rounded-lg overflow-hidden transition-all duration-300 border border-white/10 h-full flex flex-col backdrop-blur-md hover:transform hover:-translate-y-2 hover:shadow-lg hover:shadow-[rgb(26, 34, 76)]';
+                    
+                    card.innerHTML = `
+                        <div class="p-4">
+                            <p class="text-sm text-secondary mb-1">${formatDate(release.Date)}</p>
+                            <h3 class="text-lg mb-2 leading-tight">${formatTitle(release.Title)}</h3>
+                        </div>
+                        <div class="p-4 mt-auto text-right">
+                            <button class="bg-secondary text-white border-none py-2 px-4 rounded-full cursor-pointer transition-all duration-300 text-sm hover:bg-primary hover:scale-105">Know More</button>
+                        </div>
+                    `;
+                    
+                    // Add event listener to "Know More" button
+                    card.querySelector('button').addEventListener('click', () => {
+                        showReleaseDetails(release);
+                    });
+                    
+                    releasesContainer.appendChild(card);
+                });
+            }
+            
+            // Render releases as list items
+            function renderListView(results) {
+                results.forEach((release, index) => {
+                    const row = document.createElement('div');
+                    row.className = 'bg-cardBg rounded-lg overflow-hidden transition-all duration-300 border border-white/10 w-full flex flex-col md:flex-row md:items-center backdrop-blur-md hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[rgb(26, 34, 76)] p-4';
+                    
+                    row.innerHTML = `
+                        <div class="w-12 h-12 flex items-center justify-center text-secondary font-bold text-lg md:mr-4">
+                            ${index + 1}
+                        </div>
+                        <div class="md:w-1/5 mb-2 md:mb-0">
+                            <p class="text-sm text-secondary">${formatDate(release.Date)}</p>
+                        </div>
+                        <div class="md:w-3/5 mb-2 md:mb-0">
+                            <h3 class="text-lg leading-tight">${formatTitle(release.Title)}</h3>
+                        </div>
+                        <div class="md:w-1/5 md:text-right mt-2 md:mt-0 ml-auto">
+                            <button class="bg-secondary text-white border-none py-2 px-4 rounded-full cursor-pointer transition-all duration-300 text-sm hover:bg-primary hover:scale-105">Know More</button>
+                        </div>
+                    `;
+                    
+                    // Add event listener to "Know More" button
+                    row.querySelector('button').addEventListener('click', () => {
+                        showReleaseDetails(release);
+                    });
+                    
+                    releasesContainer.appendChild(row);
+                });
+            }
+            
+            // Format date to be more readable
+            function formatDate(dateStr) {
+                const parts = dateStr.split(',');
+                const monthNames = {
+                    'Jan': 'January',
+                    'Feb': 'February',
+                    'Mar': 'March',
+                    'Apr': 'April',
+                    'May': 'May',
+                    'Jun': 'June',
+                    'Jul': 'July',
+                    'Aug': 'August',
+                    'Sep': 'September',
+                    'Oct': 'October',
+                    'Nov': 'November',
+                    'Dec': 'December'
+                };
+                
+                const month = monthNames[parts[0]] || parts[0];
+                const day = parts[1];
+                const year = parts[2];
+                
+                return `${month} ${day}, ${year}`;
+            }
+            
+            // Format title to be more readable
+            function formatTitle(title) {
+                return title.replace(/\\n/g, ' ').trim();
+            }
+            
+            // Show release details in modal
+            function showReleaseDetails(release) {
+                console.log(release);
+                modalTitle.textContent = formatTitle(release.Title);
+                modalDate.textContent = formatDate(release.Date);
+                
+                // Create dummy detailed content
+                modalBody.innerHTML = `
+                    <p>Release year: ${release.year}</p>
+                    <p>This press release from ISRO provides details about "${formatTitle(release.Title)}".</p>
+                    <p>For complete information and original press release content, please visit the official ISRO website.</p>
+                `;
+                
+                modal.style.display = 'flex';
+            }
+            
+            // Close modal when clicking the close button
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+            
+            // Close modal when clicking outside the modal
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+            
+            // Search functionality
+            searchInput.addEventListener('input', (e) => {
+                searchQuery = e.target.value;
+                renderReleases();
+            });
+            
+            // Add event listener to "All" filter
+            document.querySelector('.year-filter').addEventListener('click', () => {
+                filterReleases('all');
+                
+                // Update active state
+                document.querySelectorAll('.year-filter').forEach(btn => {
+                    btn.classList.remove('bg-primary', 'border-primary');
+                });
+                document.querySelector('.year-filter').classList.add('bg-primary', 'border-primary');
+            });
+        });
+        
+        // Toggle menu visibility on mobile
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!--Press release UI options
+
+// Original - Creating card for each release
+results.forEach(release => {
+    const card = document.createElement('div');
+    card.className = 'bg-cardBg rounded-lg overflow-hidden transition-all duration-300 border border-white/10 h-full flex flex-col backdrop-blur-md hover:transform hover:-translate-y-2 hover:shadow-lg hover:shadow-[rgb(26, 34, 76)]';
+    
+    card.innerHTML = `
+        <div class="p-4">
+            <p class="text-sm text-secondary mb-1">${formatDate(release.Date)}</p>
+            <h3 class="text-lg mb-2 leading-tight">${formatTitle(release.Title)}</h3>
+        </div>
+        <div class="p-4 mt-auto text-right">
+            <button class="bg-secondary text-white border-none py-2 px-4 rounded-full cursor-pointer transition-all duration-300 text-sm hover:bg-primary hover:scale-105">Know More</button>
+        </div>
+    `;
+    
+    // Rest of the code...
+});
+
+// Changed to - Creating list rows for each release
+results.forEach((release, index) => {
+    const row = document.createElement('div');
+    row.className = 'bg-cardBg rounded-lg overflow-hidden transition-all duration-300 border border-white/10 w-full flex flex-col md:flex-row md:items-center backdrop-blur-md hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[rgb(26, 34, 76)] p-4';
+    
+    row.innerHTML = `
+        <div class="w-12 h-12 flex items-center justify-center text-secondary font-bold text-lg md:mr-4">
+            ${index + 1}
+        </div>
+        <div class="md:w-1/5 mb-2 md:mb-0">
+            <p class="text-sm text-secondary">${formatDate(release.Date)}</p>
+        </div>
+        <div class="md:w-3/5 mb-2 md:mb-0">
+            <h3 class="text-lg leading-tight">${formatTitle(release.Title)}</h3>
+        </div>
+        <div class="md:w-1/5 md:text-right mt-2 md:mt-0 ml-auto">
+            <button class="bg-secondary text-white border-none py-2 px-4 rounded-full cursor-pointer transition-all duration-300 text-sm hover:bg-primary hover:scale-105">Know More</button>
+        </div>
+    `;
+    
+    // Rest of the code...
+}); -->
