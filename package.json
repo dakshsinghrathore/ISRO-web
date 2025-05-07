@@ -1,5 +1,15 @@
 {
+  "name": "isro-website",
+  "version": "1.0.0",
+  "description": "ISRO Website",
+  "scripts": {
+    "scrape-press": "node scripts/scrape-press.js"
+  },
   "devDependencies": {
     "tailwindcss": "^3.4.16"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "cheerio": "^1.0.0"
   }
 }
