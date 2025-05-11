@@ -1,0 +1,40 @@
+name: Update Press Releases
+
+on:
+  schedule:
+    # Run every 6 days
+    - cron: '0 0 */6 * *'
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  update-press-releases:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Run scraper
+      run: node scripts/scrape-press.js
+      
+    - name: Check for changes
+      id: git-check
+      run: |
+        git add data/press-releases.json
+        git diff --staged --quiet || echo "changes=true" >> $GITHUB_OUTPUT
+        
+    - name: Commit and push if changed
+      if: steps.git-check.outputs.changes == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Update press releases [skip ci]" data/press-releases.json
+        git push 
